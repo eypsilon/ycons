@@ -124,7 +124,9 @@ _Preview for:_ 😀
 
 ## 🚀 Quick Start
 
-1. Open `emoji-browser-grok.html` in your browser
+**✨ [Try Ycons Online](https://eypsilon.github.io/ycons/example/) ✨**
+
+1. Open the live tool or download `emoji-browser-grok.html`
 2. Search or browse for emojis you want to use
 3. Click emojis to select them
 4. See live preview and generated CSS
