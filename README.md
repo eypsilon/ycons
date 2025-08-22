@@ -8,7 +8,7 @@ That's what to expect: Plain CSS. You can copy&paste it to your CSS, or download
 
 **No additional files, images, svgs, pngs or else needed.**
 
-[Live example for the following on JSFiddle](https://jsfiddle.net/k5tpfywv/)
+[Live example for the following on JSFiddle](https://jsfiddle.net/3r0Lhfnz/)
 
 _Preview for:_ 😀
 
@@ -91,7 +91,37 @@ _Preview for:_ 😀
 <span class="ycon ycon-grinning-face bounce"></span>
 ```
 
-[131 Icons, ~8kb CSS](https://jsfiddle.net/wycsx647/)
+[131 Icons, ~8kb CSS, on JSFiddle](https://jsfiddle.net/wycsx647/)
+
+## 🔄 Creative Loading Indicators
+
+Spinning emojis make perfect themed loading indicators with personality:
+
+```html
+<!-- Classic spinners -->
+<span class="ycon ycon-gear spin"></span>           <!-- ⚙️ Processing... -->
+<span class="ycon ycon-cyclone spin"></span>        <!-- 🌀 Loading... -->
+<span class="ycon ycon-arrows-counterclockwise spin"></span> <!-- ↺ Refreshing... -->
+
+<!-- Creative themed loaders -->
+<span class="ycon ycon-pizza spin"></span>          <!-- 🍕 Cooking your data -->
+<span class="ycon ycon-cd spin"></span>             <!-- 💿 Loading playlist -->
+<span class="ycon ycon-camera spin"></span>         <!-- 📷 Processing photos -->
+```
+
+**Pro tip:** Combine animations for extra attention (not included):
+```html
+<style>
+.ycon.pulse.spin {
+  animation:         ycon-pulse 2s ease-in-out infinite, ycon-spin 2s linear infinite;
+  -webkit-animation: ycon-pulse 2s ease-in-out infinite, ycon-spin 2s linear infinite;
+}
+</style>
+<span class="ycon ycon-hourglass-flowing-sand spin pulse"></span> <!-- ⏳ Double effect! -->
+```
+
+[Resource friendly loading indicators on JSFiddle](https://jsfiddle.net/hmjaw5vb/)
+
 
 ## ✨ Features
 
