@@ -265,6 +265,21 @@
             }
         }
 
+        .file-tree {
+            font-family: 'Courier New', monospace;
+            background: #f5f5f5;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            white-space: pre;
+            line-height: 1.1;
+            font-size: 16px;
+            font-weight: bold;
+
+            .ycon { font-size: 18px }
+        }
+
         /**
         * Used Ycons in this tool
         */
@@ -336,6 +351,17 @@
         .ycon-red-triangle-pointed-down::before { content: "\1F53B"; }
         .ycon-end-arrow::before { content: "\1F51A"; }
         .ycon-end-arrow::before { content: "\1F51A"; }
+        /* Box drawing characters */
+        .ycon-box-drawings-light-vertical-and-right::before { content: "\251C"; }
+        .ycon-box-drawings-light-horizontal::before { content: "\2500"; }
+        .ycon-box-drawings-light-up-and-right::before { content: "\2514"; }
+        .ycon-box-drawings-light-vertical::before { content: "\2502"; }
+        .ycon-box-drawings-light-down-and-right::before { content: "\250C"; }
+        .ycon-box-drawings-light-down-and-left::before { content: "\2510"; }
+        .ycon-box-drawings-light-up-and-left::before { content: "\2518"; }
+        .ycon-box-drawings-light-down-and-horizontal::before { content: "\252C"; }
+        .ycon-box-drawings-light-up-and-horizontal::before { content: "\2534"; }
+        .ycon-box-drawings-light-vertical-and-horizontal::before { content: "\253C"; }
     </style>
 </head>
 <body>
@@ -366,6 +392,35 @@
                 <li>In fact, the whole list is a warning!</li>
                 <li>Lorem ipsum dolor sit amet?</li>
             </ul>
+        </section>
+
+        <section class="file-structure">
+            <h2>Ycons Project Structure</h2>
+<div class="file-tree">ycons/
+<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> CLAUDE.md
+<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> README.md
+<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> RELEASE_NOTES.md
+<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> ToDo.md
+<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> example/
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> advanced.usage.html
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> assets/
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> screen-shot-ycons-startpage-1-v1.0.3.png
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> screen-shot-ycons-startpage-2-v1.0.3.png
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-up-and-right" role="img" aria-label="box drawings light up and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> screen-shot-ycons-startpage.png
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> downloads/
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> ycons-all.css
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> ycons-all.html
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> ycons-all.json
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-up-and-right" role="img" aria-label="box drawings light up and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> ycons-all.min.css
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> favicon.ico
+<span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-up-and-right" role="img" aria-label="box drawings light up and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> index.html
+<span class="ycon ycon-box-drawings-light-up-and-right" role="img" aria-label="box drawings light up and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> scripts/
+    <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> USAGE.md
+    <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> emoji-test.extended.txt
+    <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> emoji-test.txt
+    <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> emojis.extended.json
+    <span class="ycon ycon-box-drawings-light-up-and-right" role="img" aria-label="box drawings light up and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> parse-emojis.js
+</div>
         </section>
 
         <section class="grid-card">
