@@ -1,7 +1,7 @@
 {
   "meta": {
-    "total": 1736,
-    "exported": "2025-08-27T04:40:25.779Z",
+    "total": 1918,
+    "exported": "2025-08-27T15:23:07.347Z",
     "prefix": "ycon",
     "defaultSize": "1.25"
   },
@@ -136,6 +136,13 @@
       "id": "1F617",
       "symbol": "😗",
       "name": "kissing face",
+      "group": "Smileys & Emotion",
+      "subgroup": "face-affection"
+    },
+    {
+      "id": "263A\\FE0F",
+      "symbol": "☺️",
+      "name": "smiling face raw",
       "group": "Smileys & Emotion",
       "subgroup": "face-affection"
     },
@@ -455,6 +462,13 @@
       "subgroup": "face-unwell"
     },
     {
+      "id": "1F635\\200D\\1F4AB",
+      "symbol": "😵‍💫",
+      "name": "face with spiral eyes raw",
+      "group": "Smileys & Emotion",
+      "subgroup": "face-unwell"
+    },
+    {
       "id": "1F92F",
       "symbol": "🤯",
       "name": "exploding head",
@@ -528,6 +542,13 @@
       "id": "1F641",
       "symbol": "🙁",
       "name": "slightly frowning face",
+      "group": "Smileys & Emotion",
+      "subgroup": "face-concerned"
+    },
+    {
+      "id": "2639\\FE0F",
+      "symbol": "☹️",
+      "name": "frowning face raw",
       "group": "Smileys & Emotion",
       "subgroup": "face-concerned"
     },
@@ -731,6 +752,13 @@
       "id": "1F480",
       "symbol": "💀",
       "name": "skull",
+      "group": "Smileys & Emotion",
+      "subgroup": "face-negative"
+    },
+    {
+      "id": "2620\\FE0F",
+      "symbol": "☠️",
+      "name": "skull and crossbones raw",
       "group": "Smileys & Emotion",
       "subgroup": "face-negative"
     },
@@ -959,9 +987,23 @@
       "subgroup": "heart"
     },
     {
+      "id": "2764\\FE0F\\200D\\1F525",
+      "symbol": "❤️‍🔥",
+      "name": "heart on fire raw",
+      "group": "Smileys & Emotion",
+      "subgroup": "heart"
+    },
+    {
+      "id": "2764\\FE0F",
+      "symbol": "❤️",
+      "name": "red heart",
+      "group": "Smileys & Emotion",
+      "subgroup": "heart"
+    },
+    {
       "id": "2764",
       "symbol": "❤",
-      "name": "red heart",
+      "name": "red heart raw",
       "group": "Smileys & Emotion",
       "subgroup": "heart"
     },
@@ -1092,6 +1134,13 @@
       "subgroup": "emotion"
     },
     {
+      "id": "1F573\\FE0F",
+      "symbol": "🕳️",
+      "name": "hole raw",
+      "group": "Smileys & Emotion",
+      "subgroup": "emotion"
+    },
+    {
       "id": "1F573",
       "symbol": "🕳",
       "name": "hole",
@@ -1106,9 +1155,23 @@
       "subgroup": "emotion"
     },
     {
+      "id": "1F5E8\\FE0F",
+      "symbol": "🗨️",
+      "name": "left speech bubble raw",
+      "group": "Smileys & Emotion",
+      "subgroup": "emotion"
+    },
+    {
       "id": "1F5E8",
       "symbol": "🗨",
       "name": "left speech bubble",
+      "group": "Smileys & Emotion",
+      "subgroup": "emotion"
+    },
+    {
+      "id": "1F5EF\\FE0F",
+      "symbol": "🗯️",
+      "name": "right anger bubble raw",
       "group": "Smileys & Emotion",
       "subgroup": "emotion"
     },
@@ -2646,6 +2709,13 @@
       "subgroup": "animal-mammal"
     },
     {
+      "id": "1F43F\\FE0F",
+      "symbol": "🐿️",
+      "name": "chipmunk raw",
+      "group": "Animals & Nature",
+      "subgroup": "animal-mammal"
+    },
+    {
       "id": "1F43F",
       "symbol": "🐿",
       "name": "chipmunk",
@@ -2793,6 +2863,13 @@
       "subgroup": "animal-bird"
     },
     {
+      "id": "1F54A\\FE0F",
+      "symbol": "🕊️",
+      "name": "dove raw",
+      "group": "Animals & Nature",
+      "subgroup": "animal-bird"
+    },
+    {
       "id": "1F54A",
       "symbol": "🕊",
       "name": "dove",
@@ -2873,6 +2950,13 @@
       "id": "1FABF",
       "symbol": "🪿",
       "name": "goose",
+      "group": "Animals & Nature",
+      "subgroup": "animal-bird"
+    },
+    {
+      "id": "1F426\\200D\\1F525",
+      "symbol": "🐦‍🔥",
+      "name": "phoenix",
       "group": "Animals & Nature",
       "subgroup": "animal-bird"
     },
@@ -3122,9 +3206,23 @@
       "subgroup": "animal-bug"
     },
     {
+      "id": "1F577\\FE0F",
+      "symbol": "🕷️",
+      "name": "spider raw",
+      "group": "Animals & Nature",
+      "subgroup": "animal-bug"
+    },
+    {
       "id": "1F577",
       "symbol": "🕷",
       "name": "spider",
+      "group": "Animals & Nature",
+      "subgroup": "animal-bug"
+    },
+    {
+      "id": "1F578\\FE0F",
+      "symbol": "🕸️",
+      "name": "spider web raw",
       "group": "Animals & Nature",
       "subgroup": "animal-bug"
     },
@@ -3195,6 +3293,13 @@
       "id": "1FAB7",
       "symbol": "🪷",
       "name": "lotus",
+      "group": "Animals & Nature",
+      "subgroup": "plant-flower"
+    },
+    {
+      "id": "1F3F5\\FE0F",
+      "symbol": "🏵️",
+      "name": "rosette raw",
       "group": "Animals & Nature",
       "subgroup": "plant-flower"
     },
@@ -3307,6 +3412,13 @@
       "id": "1F33F",
       "symbol": "🌿",
       "name": "herb",
+      "group": "Animals & Nature",
+      "subgroup": "plant-other"
+    },
+    {
+      "id": "2618\\FE0F",
+      "symbol": "☘️",
+      "name": "shamrock raw",
       "group": "Animals & Nature",
       "subgroup": "plant-other"
     },
@@ -3538,6 +3650,13 @@
       "id": "1F33D",
       "symbol": "🌽",
       "name": "ear of corn",
+      "group": "Food & Drink",
+      "subgroup": "food-vegetable"
+    },
+    {
+      "id": "1F336\\FE0F",
+      "symbol": "🌶️",
+      "name": "hot pepper raw",
       "group": "Food & Drink",
       "subgroup": "food-vegetable"
     },
@@ -4235,6 +4354,13 @@
       "subgroup": "dishware"
     },
     {
+      "id": "1F37D\\FE0F",
+      "symbol": "🍽️",
+      "name": "fork and knife with plate raw",
+      "group": "Food & Drink",
+      "subgroup": "dishware"
+    },
+    {
       "id": "1F37D",
       "symbol": "🍽",
       "name": "fork and knife with plate",
@@ -4305,6 +4431,13 @@
       "subgroup": "place-map"
     },
     {
+      "id": "1F5FA\\FE0F",
+      "symbol": "🗺️",
+      "name": "world map raw",
+      "group": "Travel & Places",
+      "subgroup": "place-map"
+    },
+    {
       "id": "1F5FA",
       "symbol": "🗺",
       "name": "world map",
@@ -4326,9 +4459,23 @@
       "subgroup": "place-map"
     },
     {
+      "id": "1F3D4\\FE0F",
+      "symbol": "🏔️",
+      "name": "snow-capped mountain raw",
+      "group": "Travel & Places",
+      "subgroup": "place-geographic"
+    },
+    {
       "id": "1F3D4",
       "symbol": "🏔",
       "name": "snow-capped mountain",
+      "group": "Travel & Places",
+      "subgroup": "place-geographic"
+    },
+    {
+      "id": "26F0\\FE0F",
+      "symbol": "⛰️",
+      "name": "mountain raw",
       "group": "Travel & Places",
       "subgroup": "place-geographic"
     },
@@ -4354,9 +4501,23 @@
       "subgroup": "place-geographic"
     },
     {
+      "id": "1F3D5\\FE0F",
+      "symbol": "🏕️",
+      "name": "camping raw",
+      "group": "Travel & Places",
+      "subgroup": "place-geographic"
+    },
+    {
       "id": "1F3D5",
       "symbol": "🏕",
       "name": "camping",
+      "group": "Travel & Places",
+      "subgroup": "place-geographic"
+    },
+    {
+      "id": "1F3D6\\FE0F",
+      "symbol": "🏖️",
+      "name": "beach with umbrella raw",
       "group": "Travel & Places",
       "subgroup": "place-geographic"
     },
@@ -4389,6 +4550,13 @@
       "subgroup": "place-geographic"
     },
     {
+      "id": "1F3DF\\FE0F",
+      "symbol": "🏟️",
+      "name": "stadium raw",
+      "group": "Travel & Places",
+      "subgroup": "place-building"
+    },
+    {
       "id": "1F3DF",
       "symbol": "🏟",
       "name": "stadium",
@@ -4399,6 +4567,13 @@
       "id": "1F3DB",
       "symbol": "🏛",
       "name": "classical building",
+      "group": "Travel & Places",
+      "subgroup": "place-building"
+    },
+    {
+      "id": "1F3D7\\FE0F",
+      "symbol": "🏗️",
+      "name": "building construction raw",
       "group": "Travel & Places",
       "subgroup": "place-building"
     },
@@ -4438,9 +4613,23 @@
       "subgroup": "place-building"
     },
     {
+      "id": "1F3D8\\FE0F",
+      "symbol": "🏘️",
+      "name": "houses raw",
+      "group": "Travel & Places",
+      "subgroup": "place-building"
+    },
+    {
       "id": "1F3D8",
       "symbol": "🏘",
       "name": "houses",
+      "group": "Travel & Places",
+      "subgroup": "place-building"
+    },
+    {
+      "id": "1F3DA\\FE0F",
+      "symbol": "🏚️",
+      "name": "derelict house raw",
       "group": "Travel & Places",
       "subgroup": "place-building"
     },
@@ -4606,6 +4795,13 @@
       "subgroup": "place-religious"
     },
     {
+      "id": "26E9\\FE0F",
+      "symbol": "⛩️",
+      "name": "shinto shrine raw",
+      "group": "Travel & Places",
+      "subgroup": "place-religious"
+    },
+    {
       "id": "26E9",
       "symbol": "⛩",
       "name": "shinto shrine",
@@ -4648,6 +4844,13 @@
       "subgroup": "place-other"
     },
     {
+      "id": "1F3D9\\FE0F",
+      "symbol": "🏙️",
+      "name": "cityscape raw",
+      "group": "Travel & Places",
+      "subgroup": "place-other"
+    },
+    {
       "id": "1F3D9",
       "symbol": "🏙",
       "name": "cityscape",
@@ -4686,6 +4889,13 @@
       "id": "1F309",
       "symbol": "🌉",
       "name": "bridge at night",
+      "group": "Travel & Places",
+      "subgroup": "place-other"
+    },
+    {
+      "id": "2668\\FE0F",
+      "symbol": "♨️",
+      "name": "hot springs raw",
       "group": "Travel & Places",
       "subgroup": "place-other"
     },
@@ -4942,9 +5152,23 @@
       "subgroup": "transport-ground"
     },
     {
+      "id": "1F3CE\\FE0F",
+      "symbol": "🏎️",
+      "name": "racing car raw",
+      "group": "Travel & Places",
+      "subgroup": "transport-ground"
+    },
+    {
       "id": "1F3CE",
       "symbol": "🏎",
       "name": "racing car",
+      "group": "Travel & Places",
+      "subgroup": "transport-ground"
+    },
+    {
+      "id": "1F3CD\\FE0F",
+      "symbol": "🏍️",
+      "name": "motorcycle raw",
       "group": "Travel & Places",
       "subgroup": "transport-ground"
     },
@@ -5019,6 +5243,13 @@
       "subgroup": "transport-ground"
     },
     {
+      "id": "1F6E3\\FE0F",
+      "symbol": "🛣️",
+      "name": "motorway raw",
+      "group": "Travel & Places",
+      "subgroup": "transport-ground"
+    },
+    {
       "id": "1F6E3",
       "symbol": "🛣",
       "name": "motorway",
@@ -5026,9 +5257,23 @@
       "subgroup": "transport-ground"
     },
     {
+      "id": "1F6E4\\FE0F",
+      "symbol": "🛤️",
+      "name": "railway track raw",
+      "group": "Travel & Places",
+      "subgroup": "transport-ground"
+    },
+    {
       "id": "1F6E4",
       "symbol": "🛤",
       "name": "railway track",
+      "group": "Travel & Places",
+      "subgroup": "transport-ground"
+    },
+    {
+      "id": "1F6E2\\FE0F",
+      "symbol": "🛢️",
+      "name": "oil drum raw",
       "group": "Travel & Places",
       "subgroup": "transport-ground"
     },
@@ -5124,6 +5369,13 @@
       "subgroup": "transport-water"
     },
     {
+      "id": "1F6F3\\FE0F",
+      "symbol": "🛳️",
+      "name": "passenger ship raw",
+      "group": "Travel & Places",
+      "subgroup": "transport-water"
+    },
+    {
       "id": "1F6F3",
       "symbol": "🛳",
       "name": "passenger ship",
@@ -5134,6 +5386,13 @@
       "id": "26F4",
       "symbol": "⛴",
       "name": "ferry",
+      "group": "Travel & Places",
+      "subgroup": "transport-water"
+    },
+    {
+      "id": "1F6E5\\FE0F",
+      "symbol": "🛥️",
+      "name": "motor boat raw",
       "group": "Travel & Places",
       "subgroup": "transport-water"
     },
@@ -5152,9 +5411,23 @@
       "subgroup": "transport-water"
     },
     {
+      "id": "2708\\FE0F",
+      "symbol": "✈️",
+      "name": "airplane raw",
+      "group": "Travel & Places",
+      "subgroup": "transport-air"
+    },
+    {
       "id": "2708",
       "symbol": "✈",
       "name": "airplane",
+      "group": "Travel & Places",
+      "subgroup": "transport-air"
+    },
+    {
+      "id": "1F6E9\\FE0F",
+      "symbol": "🛩️",
+      "name": "small airplane raw",
       "group": "Travel & Places",
       "subgroup": "transport-air"
     },
@@ -5222,6 +5495,13 @@
       "subgroup": "transport-air"
     },
     {
+      "id": "1F6F0\\FE0F",
+      "symbol": "🛰️",
+      "name": "satellite raw",
+      "group": "Travel & Places",
+      "subgroup": "transport-air"
+    },
+    {
       "id": "1F6F0",
       "symbol": "🛰",
       "name": "satellite",
@@ -5241,6 +5521,13 @@
       "name": "flying saucer",
       "group": "Travel & Places",
       "subgroup": "transport-air"
+    },
+    {
+      "id": "1F6CE\\FE0F",
+      "symbol": "🛎️",
+      "name": "bellhop bell raw",
+      "group": "Travel & Places",
+      "subgroup": "hotel"
     },
     {
       "id": "1F6CE",
@@ -5285,9 +5572,23 @@
       "subgroup": "time"
     },
     {
+      "id": "23F1\\FE0F",
+      "symbol": "⏱️",
+      "name": "stopwatch raw",
+      "group": "Travel & Places",
+      "subgroup": "time"
+    },
+    {
       "id": "23F1",
       "symbol": "⏱",
       "name": "stopwatch",
+      "group": "Travel & Places",
+      "subgroup": "time"
+    },
+    {
+      "id": "23F2\\FE0F",
+      "symbol": "⏲️",
+      "name": "timer clock raw",
       "group": "Travel & Places",
       "subgroup": "time"
     },
@@ -5558,9 +5859,23 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "1F321\\FE0F",
+      "symbol": "🌡️",
+      "name": "thermometer raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "1F321",
       "symbol": "🌡",
       "name": "thermometer",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "2600\\FE0F",
+      "symbol": "☀️",
+      "name": "sun raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5621,6 +5936,13 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "2601\\FE0F",
+      "symbol": "☁️",
+      "name": "cloud raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "2601",
       "symbol": "☁",
       "name": "cloud",
@@ -5635,9 +5957,23 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "26C8\\FE0F",
+      "symbol": "⛈️",
+      "name": "cloud with lightning and rain raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "26C8",
       "symbol": "⛈",
       "name": "cloud with lightning and rain",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "1F324\\FE0F",
+      "symbol": "🌤️",
+      "name": "sun behind small cloud raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5649,9 +5985,23 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "1F325\\FE0F",
+      "symbol": "🌥️",
+      "name": "sun behind large cloud raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "1F325",
       "symbol": "🌥",
       "name": "sun behind large cloud",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "1F326\\FE0F",
+      "symbol": "🌦️",
+      "name": "sun behind rain cloud raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5663,9 +6013,23 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "1F327\\FE0F",
+      "symbol": "🌧️",
+      "name": "cloud with rain raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "1F327",
       "symbol": "🌧",
       "name": "cloud with rain",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "1F328\\FE0F",
+      "symbol": "🌨️",
+      "name": "cloud with snow raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5677,9 +6041,23 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "1F329\\FE0F",
+      "symbol": "🌩️",
+      "name": "cloud with lightning raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "1F329",
       "symbol": "🌩",
       "name": "cloud with lightning",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "1F32A\\FE0F",
+      "symbol": "🌪️",
+      "name": "tornado raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5691,9 +6069,23 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "1F32B\\FE0F",
+      "symbol": "🌫️",
+      "name": "fog raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "1F32B",
       "symbol": "🌫",
       "name": "fog",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "1F32C\\FE0F",
+      "symbol": "🌬️",
+      "name": "wind face raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5726,6 +6118,13 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "2602\\FE0F",
+      "symbol": "☂️",
+      "name": "umbrella raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "2602",
       "symbol": "☂",
       "name": "umbrella",
@@ -5740,6 +6139,13 @@
       "subgroup": "sky & weather"
     },
     {
+      "id": "26F1\\FE0F",
+      "symbol": "⛱️",
+      "name": "umbrella on ground raw",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
       "id": "26F1",
       "symbol": "⛱",
       "name": "umbrella on ground",
@@ -5750,6 +6156,13 @@
       "id": "26A1",
       "symbol": "⚡",
       "name": "high voltage",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "2744\\FE0F",
+      "symbol": "❄️",
+      "name": "snowflake raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5771,6 +6184,13 @@
       "id": "26C4",
       "symbol": "⛄",
       "name": "snowman without snow",
+      "group": "Travel & Places",
+      "subgroup": "sky & weather"
+    },
+    {
+      "id": "2604\\FE0F",
+      "symbol": "☄️",
+      "name": "comet raw",
       "group": "Travel & Places",
       "subgroup": "sky & weather"
     },
@@ -5936,6 +6356,13 @@
       "subgroup": "event"
     },
     {
+      "id": "1F39F\\FE0F",
+      "symbol": "🎟️",
+      "name": "admission tickets raw",
+      "group": "Activities",
+      "subgroup": "event"
+    },
+    {
       "id": "1F39F",
       "symbol": "🎟",
       "name": "admission tickets",
@@ -5948,6 +6375,13 @@
       "name": "ticket",
       "group": "Activities",
       "subgroup": "event"
+    },
+    {
+      "id": "1F396\\FE0F",
+      "symbol": "🎖️",
+      "name": "military medal raw",
+      "group": "Activities",
+      "subgroup": "award-medal"
     },
     {
       "id": "1F396",
@@ -6132,6 +6566,13 @@
       "subgroup": "sport"
     },
     {
+      "id": "26F8\\FE0F",
+      "symbol": "⛸️",
+      "name": "ice skate raw",
+      "group": "Activities",
+      "subgroup": "sport"
+    },
+    {
       "id": "26F8",
       "symbol": "⛸",
       "name": "ice skate",
@@ -6233,6 +6674,13 @@
       "id": "1F3AE",
       "symbol": "🎮",
       "name": "video game",
+      "group": "Activities",
+      "subgroup": "game"
+    },
+    {
+      "id": "1F579\\FE0F",
+      "symbol": "🕹️",
+      "name": "joystick raw",
       "group": "Activities",
       "subgroup": "game"
     },
@@ -6356,6 +6804,13 @@
       "subgroup": "arts & crafts"
     },
     {
+      "id": "1F5BC\\FE0F",
+      "symbol": "🖼️",
+      "name": "framed picture raw",
+      "group": "Activities",
+      "subgroup": "arts & crafts"
+    },
+    {
       "id": "1F5BC",
       "symbol": "🖼",
       "name": "framed picture",
@@ -6401,6 +6856,13 @@
       "id": "1F453",
       "symbol": "👓",
       "name": "glasses",
+      "group": "Objects",
+      "subgroup": "clothing"
+    },
+    {
+      "id": "1F576\\FE0F",
+      "symbol": "🕶️",
+      "name": "sunglasses raw",
       "group": "Objects",
       "subgroup": "clothing"
     },
@@ -6566,6 +7028,13 @@
       "subgroup": "clothing"
     },
     {
+      "id": "1F6CD\\FE0F",
+      "symbol": "🛍️",
+      "name": "shopping bags raw",
+      "group": "Objects",
+      "subgroup": "clothing"
+    },
+    {
       "id": "1F6CD",
       "symbol": "🛍",
       "name": "shopping bags",
@@ -6692,6 +7161,13 @@
       "subgroup": "clothing"
     },
     {
+      "id": "26D1\\FE0F",
+      "symbol": "⛑️",
+      "name": "rescue worker’s helmet raw",
+      "group": "Objects",
+      "subgroup": "clothing"
+    },
+    {
       "id": "26D1",
       "symbol": "⛑",
       "name": "rescue worker’s helmet",
@@ -6811,6 +7287,13 @@
       "subgroup": "music"
     },
     {
+      "id": "1F399\\FE0F",
+      "symbol": "🎙️",
+      "name": "studio microphone raw",
+      "group": "Objects",
+      "subgroup": "music"
+    },
+    {
       "id": "1F399",
       "symbol": "🎙",
       "name": "studio microphone",
@@ -6818,9 +7301,23 @@
       "subgroup": "music"
     },
     {
+      "id": "1F39A\\FE0F",
+      "symbol": "🎚️",
+      "name": "level slider raw",
+      "group": "Objects",
+      "subgroup": "music"
+    },
+    {
       "id": "1F39A",
       "symbol": "🎚",
       "name": "level slider",
+      "group": "Objects",
+      "subgroup": "music"
+    },
+    {
+      "id": "1F39B\\FE0F",
+      "symbol": "🎛️",
+      "name": "control knobs raw",
       "group": "Objects",
       "subgroup": "music"
     },
@@ -6951,6 +7448,13 @@
       "subgroup": "phone"
     },
     {
+      "id": "260E\\FE0F",
+      "symbol": "☎️",
+      "name": "telephone raw",
+      "group": "Objects",
+      "subgroup": "phone"
+    },
+    {
       "id": "260E",
       "symbol": "☎",
       "name": "telephone",
@@ -7007,9 +7511,23 @@
       "subgroup": "computer"
     },
     {
+      "id": "1F5A5\\FE0F",
+      "symbol": "🖥️",
+      "name": "desktop computer raw",
+      "group": "Objects",
+      "subgroup": "computer"
+    },
+    {
       "id": "1F5A5",
       "symbol": "🖥",
       "name": "desktop computer",
+      "group": "Objects",
+      "subgroup": "computer"
+    },
+    {
+      "id": "1F5A8\\FE0F",
+      "symbol": "🖨️",
+      "name": "printer raw",
       "group": "Objects",
       "subgroup": "computer"
     },
@@ -7021,6 +7539,13 @@
       "subgroup": "computer"
     },
     {
+      "id": "2328\\FE0F",
+      "symbol": "⌨️",
+      "name": "keyboard raw",
+      "group": "Objects",
+      "subgroup": "computer"
+    },
+    {
       "id": "2328",
       "symbol": "⌨",
       "name": "keyboard",
@@ -7028,9 +7553,23 @@
       "subgroup": "computer"
     },
     {
+      "id": "1F5B1\\FE0F",
+      "symbol": "🖱️",
+      "name": "computer mouse raw",
+      "group": "Objects",
+      "subgroup": "computer"
+    },
+    {
       "id": "1F5B1",
       "symbol": "🖱",
       "name": "computer mouse",
+      "group": "Objects",
+      "subgroup": "computer"
+    },
+    {
+      "id": "1F5B2\\FE0F",
+      "symbol": "🖲️",
+      "name": "trackball raw",
       "group": "Objects",
       "subgroup": "computer"
     },
@@ -7084,9 +7623,23 @@
       "subgroup": "light & video"
     },
     {
+      "id": "1F39E\\FE0F",
+      "symbol": "🎞️",
+      "name": "film frames raw",
+      "group": "Objects",
+      "subgroup": "light & video"
+    },
+    {
       "id": "1F39E",
       "symbol": "🎞",
       "name": "film frames",
+      "group": "Objects",
+      "subgroup": "light & video"
+    },
+    {
+      "id": "1F4FD\\FE0F",
+      "symbol": "📽️",
+      "name": "film projector raw",
       "group": "Objects",
       "subgroup": "light & video"
     },
@@ -7150,6 +7703,13 @@
       "id": "1F50E",
       "symbol": "🔎",
       "name": "magnifying glass tilted right",
+      "group": "Objects",
+      "subgroup": "light & video"
+    },
+    {
+      "id": "1F56F\\FE0F",
+      "symbol": "🕯️",
+      "name": "candle raw",
       "group": "Objects",
       "subgroup": "light & video"
     },
@@ -7280,6 +7840,13 @@
       "subgroup": "book-paper"
     },
     {
+      "id": "1F5DE\\FE0F",
+      "symbol": "🗞️",
+      "name": "rolled-up newspaper raw",
+      "group": "Objects",
+      "subgroup": "book-paper"
+    },
+    {
       "id": "1F5DE",
       "symbol": "🗞",
       "name": "rolled-up newspaper",
@@ -7297,6 +7864,13 @@
       "id": "1F516",
       "symbol": "🔖",
       "name": "bookmark",
+      "group": "Objects",
+      "subgroup": "book-paper"
+    },
+    {
+      "id": "1F3F7\\FE0F",
+      "symbol": "🏷️",
+      "name": "label raw",
       "group": "Objects",
       "subgroup": "book-paper"
     },
@@ -7376,6 +7950,13 @@
       "name": "chart increasing with yen",
       "group": "Objects",
       "subgroup": "money"
+    },
+    {
+      "id": "2709\\FE0F",
+      "symbol": "✉️",
+      "name": "envelope raw",
+      "group": "Objects",
+      "subgroup": "mail"
     },
     {
       "id": "2709",
@@ -7462,6 +8043,13 @@
       "subgroup": "mail"
     },
     {
+      "id": "1F5F3\\FE0F",
+      "symbol": "🗳️",
+      "name": "ballot box with ballot raw",
+      "group": "Objects",
+      "subgroup": "mail"
+    },
+    {
       "id": "1F5F3",
       "symbol": "🗳",
       "name": "ballot box with ballot",
@@ -7469,9 +8057,23 @@
       "subgroup": "mail"
     },
     {
+      "id": "270F\\FE0F",
+      "symbol": "✏️",
+      "name": "pencil raw",
+      "group": "Objects",
+      "subgroup": "writing"
+    },
+    {
       "id": "270F",
       "symbol": "✏",
       "name": "pencil",
+      "group": "Objects",
+      "subgroup": "writing"
+    },
+    {
+      "id": "2712\\FE0F",
+      "symbol": "✒️",
+      "name": "black nib raw",
       "group": "Objects",
       "subgroup": "writing"
     },
@@ -7483,9 +8085,23 @@
       "subgroup": "writing"
     },
     {
+      "id": "1F58B\\FE0F",
+      "symbol": "🖋️",
+      "name": "fountain pen raw",
+      "group": "Objects",
+      "subgroup": "writing"
+    },
+    {
       "id": "1F58B",
       "symbol": "🖋",
       "name": "fountain pen",
+      "group": "Objects",
+      "subgroup": "writing"
+    },
+    {
+      "id": "1F58A\\FE0F",
+      "symbol": "🖊️",
+      "name": "pen raw",
       "group": "Objects",
       "subgroup": "writing"
     },
@@ -7497,9 +8113,23 @@
       "subgroup": "writing"
     },
     {
+      "id": "1F58C\\FE0F",
+      "symbol": "🖌️",
+      "name": "paintbrush raw",
+      "group": "Objects",
+      "subgroup": "writing"
+    },
+    {
       "id": "1F58C",
       "symbol": "🖌",
       "name": "paintbrush",
+      "group": "Objects",
+      "subgroup": "writing"
+    },
+    {
+      "id": "1F58D\\FE0F",
+      "symbol": "🖍️",
+      "name": "crayon raw",
       "group": "Objects",
       "subgroup": "writing"
     },
@@ -7539,6 +8169,13 @@
       "subgroup": "office"
     },
     {
+      "id": "1F5C2\\FE0F",
+      "symbol": "🗂️",
+      "name": "card index dividers raw",
+      "group": "Objects",
+      "subgroup": "office"
+    },
+    {
       "id": "1F5C2",
       "symbol": "🗂",
       "name": "card index dividers",
@@ -7560,9 +8197,23 @@
       "subgroup": "office"
     },
     {
+      "id": "1F5D2\\FE0F",
+      "symbol": "🗒️",
+      "name": "spiral notepad raw",
+      "group": "Objects",
+      "subgroup": "office"
+    },
+    {
       "id": "1F5D2",
       "symbol": "🗒",
       "name": "spiral notepad",
+      "group": "Objects",
+      "subgroup": "office"
+    },
+    {
+      "id": "1F5D3\\FE0F",
+      "symbol": "🗓️",
+      "name": "spiral calendar raw",
       "group": "Objects",
       "subgroup": "office"
     },
@@ -7630,6 +8281,13 @@
       "subgroup": "office"
     },
     {
+      "id": "1F587\\FE0F",
+      "symbol": "🖇️",
+      "name": "linked paperclips raw",
+      "group": "Objects",
+      "subgroup": "office"
+    },
+    {
       "id": "1F587",
       "symbol": "🖇",
       "name": "linked paperclips",
@@ -7658,6 +8316,13 @@
       "subgroup": "office"
     },
     {
+      "id": "1F5C3\\FE0F",
+      "symbol": "🗃️",
+      "name": "card file box raw",
+      "group": "Objects",
+      "subgroup": "office"
+    },
+    {
       "id": "1F5C3",
       "symbol": "🗃",
       "name": "card file box",
@@ -7668,6 +8333,13 @@
       "id": "1F5C4",
       "symbol": "🗄",
       "name": "file cabinet",
+      "group": "Objects",
+      "subgroup": "office"
+    },
+    {
+      "id": "1F5D1\\FE0F",
+      "symbol": "🗑️",
+      "name": "wastebasket raw",
       "group": "Objects",
       "subgroup": "office"
     },
@@ -7826,6 +8498,13 @@
       "subgroup": "tool"
     },
     {
+      "id": "2699\\FE0F",
+      "symbol": "⚙️",
+      "name": "gear raw",
+      "group": "Objects",
+      "subgroup": "tool"
+    },
+    {
       "id": "2699",
       "symbol": "⚙",
       "name": "gear",
@@ -7833,9 +8512,23 @@
       "subgroup": "tool"
     },
     {
+      "id": "1F5DC\\FE0F",
+      "symbol": "🗜️",
+      "name": "clamp raw",
+      "group": "Objects",
+      "subgroup": "tool"
+    },
+    {
       "id": "1F5DC",
       "symbol": "🗜",
       "name": "clamp",
+      "group": "Objects",
+      "subgroup": "tool"
+    },
+    {
+      "id": "2696\\FE0F",
+      "symbol": "⚖️",
+      "name": "balance scale raw",
       "group": "Objects",
       "subgroup": "tool"
     },
@@ -7857,6 +8550,13 @@
       "id": "1F517",
       "symbol": "🔗",
       "name": "link",
+      "group": "Objects",
+      "subgroup": "tool"
+    },
+    {
+      "id": "26D3\\FE0F",
+      "symbol": "⛓️",
+      "name": "chains raw",
       "group": "Objects",
       "subgroup": "tool"
     },
@@ -7901,6 +8601,13 @@
       "name": "shovel",
       "group": "Objects",
       "subgroup": "tool"
+    },
+    {
+      "id": "2697\\FE0F",
+      "symbol": "⚗️",
+      "name": "alembic raw",
+      "group": "Objects",
+      "subgroup": "science"
     },
     {
       "id": "2697",
@@ -8029,9 +8736,23 @@
       "subgroup": "household"
     },
     {
+      "id": "1F6CF\\FE0F",
+      "symbol": "🛏️",
+      "name": "bed raw",
+      "group": "Objects",
+      "subgroup": "household"
+    },
+    {
       "id": "1F6CF",
       "symbol": "🛏",
       "name": "bed",
+      "group": "Objects",
+      "subgroup": "household"
+    },
+    {
+      "id": "1F6CB\\FE0F",
+      "symbol": "🛋️",
+      "name": "couch and lamp raw",
       "group": "Objects",
       "subgroup": "household"
     },
@@ -8330,6 +9051,13 @@
       "subgroup": "transport-sign"
     },
     {
+      "id": "26A0\\FE0F",
+      "symbol": "⚠️",
+      "name": "warning raw",
+      "group": "Symbols",
+      "subgroup": "warning"
+    },
+    {
       "id": "26A0",
       "symbol": "⚠",
       "name": "warning",
@@ -8407,9 +9135,23 @@
       "subgroup": "warning"
     },
     {
+      "id": "2622\\FE0F",
+      "symbol": "☢️",
+      "name": "radioactive raw",
+      "group": "Symbols",
+      "subgroup": "warning"
+    },
+    {
       "id": "2622",
       "symbol": "☢",
       "name": "radioactive",
+      "group": "Symbols",
+      "subgroup": "warning"
+    },
+    {
+      "id": "2623\\FE0F",
+      "symbol": "☣️",
+      "name": "biohazard raw",
       "group": "Symbols",
       "subgroup": "warning"
     },
@@ -8771,6 +9513,13 @@
       "subgroup": "av-symbol"
     },
     {
+      "id": "25B6\\FE0F",
+      "symbol": "▶️",
+      "name": "play button raw",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
       "id": "25B6",
       "symbol": "▶",
       "name": "play button",
@@ -8785,6 +9534,13 @@
       "subgroup": "av-symbol"
     },
     {
+      "id": "23ED\\FE0F",
+      "symbol": "⏭️",
+      "name": "next track button raw",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
       "id": "23ED",
       "symbol": "⏭",
       "name": "next track button",
@@ -8792,9 +9548,23 @@
       "subgroup": "av-symbol"
     },
     {
+      "id": "23EF\\FE0F",
+      "symbol": "⏯️",
+      "name": "play or pause button raw",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
       "id": "23EF",
       "symbol": "⏯",
       "name": "play or pause button",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
+      "id": "25C0\\FE0F",
+      "symbol": "◀️",
+      "name": "reverse button raw",
       "group": "Symbols",
       "subgroup": "av-symbol"
     },
@@ -8809,6 +9579,13 @@
       "id": "23EA",
       "symbol": "⏪",
       "name": "fast reverse button",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
+      "id": "23EE\\FE0F",
+      "symbol": "⏮️",
+      "name": "last track button raw",
       "group": "Symbols",
       "subgroup": "av-symbol"
     },
@@ -8848,9 +9625,23 @@
       "subgroup": "av-symbol"
     },
     {
+      "id": "23F8\\FE0F",
+      "symbol": "⏸️",
+      "name": "pause button raw",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
       "id": "23F8",
       "symbol": "⏸",
       "name": "pause button",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
+      "id": "23F9\\FE0F",
+      "symbol": "⏹️",
+      "name": "stop button raw",
       "group": "Symbols",
       "subgroup": "av-symbol"
     },
@@ -8862,9 +9653,23 @@
       "subgroup": "av-symbol"
     },
     {
+      "id": "23FA\\FE0F",
+      "symbol": "⏺️",
+      "name": "record button raw",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
       "id": "23FA",
       "symbol": "⏺",
       "name": "record button",
+      "group": "Symbols",
+      "subgroup": "av-symbol"
+    },
+    {
+      "id": "23CF\\FE0F",
+      "symbol": "⏏️",
+      "name": "eject button raw",
       "group": "Symbols",
       "subgroup": "av-symbol"
     },
@@ -8925,9 +9730,23 @@
       "subgroup": "av-symbol"
     },
     {
+      "id": "2640\\FE0F",
+      "symbol": "♀️",
+      "name": "female sign raw",
+      "group": "Symbols",
+      "subgroup": "gender"
+    },
+    {
       "id": "2640",
       "symbol": "♀",
       "name": "female sign",
+      "group": "Symbols",
+      "subgroup": "gender"
+    },
+    {
+      "id": "2642\\FE0F",
+      "symbol": "♂️",
+      "name": "male sign raw",
       "group": "Symbols",
       "subgroup": "gender"
     },
@@ -8939,11 +9758,25 @@
       "subgroup": "gender"
     },
     {
+      "id": "26A7\\FE0F",
+      "symbol": "⚧️",
+      "name": "transgender symbol raw",
+      "group": "Symbols",
+      "subgroup": "gender"
+    },
+    {
       "id": "26A7",
       "symbol": "⚧",
       "name": "transgender symbol",
       "group": "Symbols",
       "subgroup": "gender"
+    },
+    {
+      "id": "2716\\FE0F",
+      "symbol": "✖️",
+      "name": "multiply raw",
+      "group": "Symbols",
+      "subgroup": "math"
     },
     {
       "id": "2716",
@@ -8981,6 +9814,13 @@
       "subgroup": "math"
     },
     {
+      "id": "267E\\FE0F",
+      "symbol": "♾️",
+      "name": "infinity raw",
+      "group": "Symbols",
+      "subgroup": "math"
+    },
+    {
       "id": "267E",
       "symbol": "♾",
       "name": "infinity",
@@ -8988,9 +9828,23 @@
       "subgroup": "math"
     },
     {
+      "id": "203C\\FE0F",
+      "symbol": "‼️",
+      "name": "double exclamation mark raw",
+      "group": "Symbols",
+      "subgroup": "punctuation"
+    },
+    {
       "id": "203C",
       "symbol": "‼",
       "name": "double exclamation mark",
+      "group": "Symbols",
+      "subgroup": "punctuation"
+    },
+    {
+      "id": "2049\\FE0F",
+      "symbol": "⁉️",
+      "name": "exclamation question mark raw",
       "group": "Symbols",
       "subgroup": "punctuation"
     },
@@ -9030,6 +9884,13 @@
       "subgroup": "punctuation"
     },
     {
+      "id": "3030\\FE0F",
+      "symbol": "〰️",
+      "name": "wavy dash raw",
+      "group": "Symbols",
+      "subgroup": "punctuation"
+    },
+    {
       "id": "3030",
       "symbol": "〰",
       "name": "wavy dash",
@@ -9051,6 +9912,13 @@
       "subgroup": "currency"
     },
     {
+      "id": "2695\\FE0F",
+      "symbol": "⚕️",
+      "name": "medical symbol raw",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
       "id": "2695",
       "symbol": "⚕",
       "name": "medical symbol",
@@ -9058,9 +9926,23 @@
       "subgroup": "other-symbol"
     },
     {
+      "id": "267B\\FE0F",
+      "symbol": "♻️",
+      "name": "recycling symbol raw",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
       "id": "267B",
       "symbol": "♻",
       "name": "recycling symbol",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
+      "id": "269C\\FE0F",
+      "symbol": "⚜️",
+      "name": "fleur-de-lis raw",
       "group": "Symbols",
       "subgroup": "other-symbol"
     },
@@ -9107,9 +9989,23 @@
       "subgroup": "other-symbol"
     },
     {
+      "id": "2611\\FE0F",
+      "symbol": "☑️",
+      "name": "check box with check raw",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
       "id": "2611",
       "symbol": "☑",
       "name": "check box with check",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
+      "id": "2714\\FE0F",
+      "symbol": "✔️",
+      "name": "check mark raw",
       "group": "Symbols",
       "subgroup": "other-symbol"
     },
@@ -9149,9 +10045,23 @@
       "subgroup": "other-symbol"
     },
     {
+      "id": "303D\\FE0F",
+      "symbol": "〽️",
+      "name": "part alternation mark raw",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
       "id": "303D",
       "symbol": "〽",
       "name": "part alternation mark",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
+      "id": "2733\\FE0F",
+      "symbol": "✳️",
+      "name": "eight-spoked asterisk raw",
       "group": "Symbols",
       "subgroup": "other-symbol"
     },
@@ -9163,9 +10073,23 @@
       "subgroup": "other-symbol"
     },
     {
+      "id": "2734\\FE0F",
+      "symbol": "✴️",
+      "name": "eight-pointed star raw",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
       "id": "2734",
       "symbol": "✴",
       "name": "eight-pointed star",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
+      "id": "2747\\FE0F",
+      "symbol": "❇️",
+      "name": "sparkle raw",
       "group": "Symbols",
       "subgroup": "other-symbol"
     },
@@ -9177,6 +10101,13 @@
       "subgroup": "other-symbol"
     },
     {
+      "id": "00A9\\FE0F",
+      "symbol": "©️",
+      "name": "copyright raw",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
       "id": "00A9",
       "symbol": "©",
       "name": "copyright",
@@ -9184,9 +10115,23 @@
       "subgroup": "other-symbol"
     },
     {
+      "id": "00AE\\FE0F",
+      "symbol": "®️",
+      "name": "registered raw",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
       "id": "00AE",
       "symbol": "®",
       "name": "registered",
+      "group": "Symbols",
+      "subgroup": "other-symbol"
+    },
+    {
+      "id": "2122\\FE0F",
+      "symbol": "™️",
+      "name": "trade mark raw",
       "group": "Symbols",
       "subgroup": "other-symbol"
     },
@@ -11676,6 +12621,76 @@
       "subgroup": "navigation"
     },
     {
+      "id": "251C",
+      "symbol": "├",
+      "name": "Box drawings light vertical and right",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "2500",
+      "symbol": "─",
+      "name": "Box drawings light horizontal",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "2514",
+      "symbol": "└",
+      "name": "Box drawings light up and right",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "2502",
+      "symbol": "│",
+      "name": "Box drawings light vertical",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "250C",
+      "symbol": "┌",
+      "name": "Box drawings light down and right",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "2510",
+      "symbol": "┐",
+      "name": "Box drawings light down and left",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "2518",
+      "symbol": "┘",
+      "name": "Box drawings light up and left",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "252C",
+      "symbol": "┬",
+      "name": "Box drawings light down and horizontal",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "2534",
+      "symbol": "┴",
+      "name": "Box drawings light up and horizontal",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
+      "id": "253C",
+      "symbol": "┼",
+      "name": "Box drawings light vertical and horizontal",
+      "group": "Custom Ycons",
+      "subgroup": "file-tree"
+    },
+    {
       "id": "2026",
       "symbol": "…",
       "name": "Ellipsis (more)",
@@ -12157,6 +13172,265 @@
       "name": "Folder (open)",
       "group": "Custom Ycons",
       "subgroup": "emoji pictographs (optional, may render as color)"
+    },
+    {
+      "id": "1FBF0",
+      "symbol": "🯰",
+      "name": "Segmented digit zero",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF1",
+      "symbol": "🯱",
+      "name": "Segmented digit one",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF2",
+      "symbol": "🯲",
+      "name": "Segmented digit two",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF3",
+      "symbol": "🯳",
+      "name": "Segmented digit three",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF4",
+      "symbol": "🯴",
+      "name": "Segmented digit four",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF5",
+      "symbol": "🯵",
+      "name": "Segmented digit five",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF6",
+      "symbol": "🯶",
+      "name": "Segmented digit six",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF7",
+      "symbol": "🯷",
+      "name": "Segmented digit seven",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF8",
+      "symbol": "🯸",
+      "name": "Segmented digit eight",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1FBF9",
+      "symbol": "🯹",
+      "name": "Segmented digit nine",
+      "group": "Custom Ycons",
+      "subgroup": "segmented digits"
+    },
+    {
+      "id": "1D79D",
+      "symbol": "𝞝",
+      "name": "Mathematical sans-serif bold italic capital Xi",
+      "group": "Custom Ycons",
+      "subgroup": "math symbols"
+    },
+    {
+      "id": "1D7A1",
+      "symbol": "𝞡",
+      "name": "Mathematical sans-serif bold italic capital theta symbol",
+      "group": "Custom Ycons",
+      "subgroup": "math symbols"
+    },
+    {
+      "id": "2135",
+      "symbol": "ℵ",
+      "name": "Alef symbol",
+      "group": "Custom Ycons",
+      "subgroup": "math symbols"
+    },
+    {
+      "id": "2136",
+      "symbol": "ℶ",
+      "name": "Bet symbol",
+      "group": "Custom Ycons",
+      "subgroup": "math symbols"
+    },
+    {
+      "id": "2137",
+      "symbol": "ℷ",
+      "name": "Gimel symbol",
+      "group": "Custom Ycons",
+      "subgroup": "math symbols"
+    },
+    {
+      "id": "2138",
+      "symbol": "ℸ",
+      "name": "Dalet symbol",
+      "group": "Custom Ycons",
+      "subgroup": "math symbols"
+    },
+    {
+      "id": "20A8",
+      "symbol": "₨",
+      "name": "Rupee sign",
+      "group": "Custom Ycons",
+      "subgroup": "currency & units"
+    },
+    {
+      "id": "2103",
+      "symbol": "℃",
+      "name": "Degree Celsius",
+      "group": "Custom Ycons",
+      "subgroup": "currency & units"
+    },
+    {
+      "id": "2109",
+      "symbol": "℉",
+      "name": "Degree Fahrenheit",
+      "group": "Custom Ycons",
+      "subgroup": "currency & units"
+    },
+    {
+      "id": "2100",
+      "symbol": "℀",
+      "name": "Account of",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2101",
+      "symbol": "℁",
+      "name": "Addressed to the subject",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2105",
+      "symbol": "℅",
+      "name": "Care of",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2106",
+      "symbol": "℆",
+      "name": "Cada una",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2107",
+      "symbol": "ℇ",
+      "name": "Euler constant",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2116",
+      "symbol": "№",
+      "name": "Numero sign",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2120",
+      "symbol": "℠",
+      "name": "Service mark",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2122",
+      "symbol": "™",
+      "name": "Trade mark sign",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "2121",
+      "symbol": "℡",
+      "name": "Telephone sign",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "213B",
+      "symbol": "℻",
+      "name": "Facsimile sign",
+      "group": "Custom Ycons",
+      "subgroup": "symbols & marks"
+    },
+    {
+      "id": "FE60",
+      "symbol": "﹠",
+      "name": "Small ampersand",
+      "group": "Custom Ycons",
+      "subgroup": "small forms"
+    },
+    {
+      "id": "FE61",
+      "symbol": "﹡",
+      "name": "Small asterisk",
+      "group": "Custom Ycons",
+      "subgroup": "small forms"
+    },
+    {
+      "id": "FE5F",
+      "symbol": "﹟",
+      "name": "Small number sign",
+      "group": "Custom Ycons",
+      "subgroup": "small forms"
+    },
+    {
+      "id": "FE6A",
+      "symbol": "﹪",
+      "name": "Small percent sign",
+      "group": "Custom Ycons",
+      "subgroup": "small forms"
+    },
+    {
+      "id": "FE6B",
+      "symbol": "﹫",
+      "name": "Small commercial at",
+      "group": "Custom Ycons",
+      "subgroup": "small forms"
+    },
+    {
+      "id": "FE68",
+      "symbol": "﹨",
+      "name": "Small reverse solidus",
+      "group": "Custom Ycons",
+      "subgroup": "small forms"
+    },
+    {
+      "id": "FF6F",
+      "symbol": "ｯ",
+      "name": "Halfwidth katakana letter small tu",
+      "group": "Custom Ycons",
+      "subgroup": "halfwidth katakana"
+    },
+    {
+      "id": "FF90",
+      "symbol": "ﾐ",
+      "name": "Halfwidth katakana letter mi",
+      "group": "Custom Ycons",
+      "subgroup": "halfwidth katakana"
     }
   ]
 }
