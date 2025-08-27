@@ -2,9 +2,24 @@
 
 **Icons for WebApps using Emojis** - A powerful browser-based tool for creating custom CSS icon systems using Unicode emojis.
 
-This tool is self-contained HTML that runs instantly and offline in any modern browser, just using the `file://` protocol. No dependencies, no build steps, no server needed. You can download and run it from your download folder.
+This tool is completely self-contained HTML that runs instantly and offline in any modern browser, just using the `file://` protocol. All CSS and JavaScript are embedded - no external dependencies, no build steps, no server needed. You can download and run it from your download folder.
 
-> **1,393 Unicode emojis available** | Generate lightweight CSS icon systems
+> **1,736 Unicode emojis available** | Generate lightweight CSS icon systems
+
+You may recognize some of these icons. These are the same icons used by LLMs and AI Assistants across the world.
+
+```
+🚀 ✨ 💪 ❤️ ⚡ 🔥 🎯 🏆 👑 💎 ⭐ ✅ ❌ ⚠️ ℹ️ 🔒 👁️ 🔍 ⚙️ 🔔 ⬆️ ⬇️ ⬅️ ➡️ 🏠 📁 📄 🗑️ 💬 📞 🎵 🌙 ☀️ ⏰ 💰 🧠 🎨 🌍 📈
+```
+
+**Ycons gives you all 1,736 emojis** with familiar CSS classes (`.ycon-rocket`), plus powerful extras:
+
+- **Transform utilities** - flip, mirror, rotate in any direction
+- **Filter effects** - grayscale, brightness, blur, sepia
+- **Animations** - spin, pulse, bounce with smooth CSS keyframes
+- **Size variants** - 7 different sizes from tiny to huge (xxs → xxl)
+
+All while maintaining the **ultra-lightweight** approach that beats every icon library.
 
 ## Preview
 
@@ -14,7 +29,7 @@ That's what to expect: Plain CSS. You can copy&paste it to your CSS, or download
 
 ![alt Ycons Entry Page](./example/assets/screen-shot-ycons-startpage.png)
 
-The final icons are plain CSS, so basically text - no external files needed!
+The final icons are plain CSS, so basically text - no external files or tools needed!
 
 
 [Live example for the following on JSFiddle using: 😀](https://jsfiddle.net/zsoepy1f/)
@@ -84,10 +99,22 @@ Renamed to (you can rename all, or none, it's your call):
 
 /* Our renamed Ycon */
 .ycon-ypsilon::before { content: "\1F600"; }
+
+/* 💡 Fun fact:
+  Ycons works with ANY Unicode character! Need an ampersand (&) or custom symbol?
+
+  .ycon-ampersand::before { content: "\0026"; }  // \0026 = & symbol
+  .ycon-arrow::before { content: "\2192"; }      // \2192 = → arrow
+  .ycon-heart::before { content: "\2665"; }      // \2665 = ♥ heart
+
+  Find UTF-16 codes at: https://www.compart.com/en/unicode/
+*/
 </style>
 <!--
+
   Available variants, including sizes and modifiers.
   This is not part of the tool, but how to use Ycons.
+
 -->
 <span class="ycon ycon-ypsilon"></span>
 <span class="ycon ycon-ypsilon ycon-xxs"></span>
@@ -149,8 +176,20 @@ Spinning emojis make perfect themed loading indicators with personality:
 
 **✨ [Try Ycons Online](https://eypsilon.github.io/ycons/example/) ✨**
 
-1. Open the live tool or download [`./example/index.html`](./example/index.html) (254kb)
-   - Includes [emoji data](./scripts/emojis.json) (209kb)
+### 📦 Pre-built Downloads
+
+**Don't want to generate your own?** Grab the complete icon set:
+
+- **[All 1,736 icons CSS](./example/downloads/ycons-all.css)** (90kb formatted)
+- **[Minified version](./example/downloads/ycons-all.min.css)** (80kb - 12% smaller)
+- **[Demo HTML page](./example/downloads/ycons-all.html)** (2.5MB with live examples)
+  - [Browser version](https://eypsilon.github.io/ycons/example/downloads/ycons-all.html)
+- **[JSON metadata](./example/downloads/ycons-all.json)** (263kb with full data)
+
+### 🛠️ Custom Generation
+
+1. Open the live tool or download [`./example/index.html`](./example/index.html) (326kb)
+   - Includes [emoji data](./scripts/emojis.extended.json) (263kb)
 2. Search or browse for emojis you want to use
 3. Click emojis to select them
 4. See live preview and generated CSS
@@ -159,7 +198,8 @@ Spinning emojis make perfect themed loading indicators with personality:
 ## ✨ Features
 
 ### 🔍 **Live Emoji Browser**
-- Browse 1,393 emojis from the official Unicode emoji set
+- Browse 1,736 symbols from Unicode emoji set + WebApp symbols
+- **Extended symbol set** includes country flags and useful WebApp symbols (« » ← → etc.)
 - Real-time search by name, group, or category
 - Filter by emoji groups (Smileys, People, Animals, etc.)
 - Interactive selection with visual feedback
@@ -179,12 +219,13 @@ Spinning emojis make perfect themed loading indicators with personality:
 - Interactive examples with tooltips
 
 ### 💾 **Export & Import**
-- **Download CSS** - Get production-ready stylesheet (62-71kb for all icons)
-- **Download HTML** - Complete demo page with selected icons (~1.3MB for all icons)
+- **Download CSS** - Get production-ready stylesheet (80-90kb for all icons)
+- **Download HTML** - Complete demo page with selected icons (~2.5MB for all icons)
 - **Minify option** - Compact CSS for smaller file sizes (~12% reduction)
-- **Export JSON** - Save selected icons with metadata (~209kb for all icons)
+- **Export JSON** - Save selected icons with metadata (~263kb for all icons)
 - **Import JSON** - Restore previous selections
 - **Size calculator** - See approximate file size in real-time
+
 
 ## 🎯 Usage Examples
 
@@ -256,23 +297,30 @@ Spinning emojis make perfect themed loading indicators with personality:
 ycons/
 ├── example/
 │   ├── assets/
-│   │   ├── favicon.ico
-│   │   └── main.css          # 9kb - UI styles
-│   └── index.html            # 254kb - Complete app
+│   │   └── screen-shot-ycons-startpage.png
+│   ├── downloads/
+│   │   ├── ycons-all.html       # 2,5 MB (2.475.554 Bytes)
+│   │   ├── ycons-all.json       # 263,3 KB (263.280 Bytes)
+│   │   ├── ycons-all.css        # 90,2 KB (90.245 Bytes)
+│   │   └── ycons-all.min.css    # 79,6 KB (79.603 Bytes)
+│   ├── favicon.ico
+│   └── index.html               # 260kb - Complete app
 ├── scripts/
-│   ├── emoji-test.txt        # Unicode data source
-│   ├── emojis.json           # 209kb - 1,393 processed emojis
-│   └── parse-emojis.js       # Unicode data parser
-└── README.md                 # This file
+│   ├── emoji-test.txt           # Unicode data source
+│   ├── emoji-test.extended.txt  # Extended unicode data
+│   ├── emojis.extended.json     # 263kb - 1,736 processed emojis
+│   ├── parse-emojis.js          # Unicode data parser
+│   └── USAGE.md                 # How to use the parser
+└── README.md                    # This file
 ```
 
 ## 📊 Performance Data
 
-**All 1,393 icons exported:**
-- **CSS (formatted):** 71kb
-- **CSS (minified):** 62kb (~12% smaller)
-- **HTML demo page:** 1.3MB (includes embedded CSS + examples + Backup JSON)
-- **JSON backup:** 209kb (metadata + Unicode mappings)
+**All 1,736 icons exported:**
+- **CSS (formatted):** 90kb
+- **CSS (minified):** 80kb (~12% smaller)
+- **HTML demo page:** 2.5MB (includes embedded CSS + examples + accessibility + backup JSON)
+- **JSON backup:** 263kb (metadata + Unicode mappings)
 - **Total package:** ~1.7MB for complete icon system
 
 ## 🎨 Generated CSS Structure
@@ -312,6 +360,17 @@ The tool generates clean, organized CSS:
 .ycon-heart::before { content: "\2764"; }
 ```
 
+## 🌍 Why Unicode Emojis as Icons?
+
+- **Universal**: Unicode emojis are a global standard—natively supported on every modern browser, OS, and device.
+- **Familiar**: These are the icons everyone already uses in chat apps, social media, and even AI tools like ChatGPT and GitHub Copilot.
+- **Zero Dependencies**: No SVGs, image files, or icon fonts. Just pure CSS and HTML.
+- **Recognizable**: Users instantly "get" what each icon means, with no learning curve.
+- **Offline-Ready**: Works even on `file://` URLs and in offline environments.
+
+> 💡 **Did you know?**
+> The same Unicode emojis you see here are used by large language models (LLMs), messengers, and social apps worldwide. Your users already know these icons!
+
 ## 💡 Use Cases
 
 - **Web applications** - Add expressive icons without image files
@@ -338,6 +397,39 @@ node parse-emojis.js
 ```
 
 This processes the Unicode `emoji-test.txt` file into structured JSON data.
+
+## 🚧 Considerations & Limitations
+
+### Platform Rendering Differences
+Emojis look different on iOS, Android, Windows, Linux. Your icons aren't visually consistent unless you pair them with a custom emoji font (like Twemoji, Noto Color Emoji). For many projects, that variance is acceptable; for branding-critical ones, consider custom fonts.
+
+### Accessibility Notes
+Because these are inserted with `::before { content: "\1F600" }`, screen readers may not announce them correctly. Consider:
+- Adding `aria-hidden="true"` to decorative icons
+- Providing `role="img" aria-label="icon name"` for semantic icons
+- Including text fallbacks for critical UI elements
+
+### Performance vs Icon Libraries
+**Ycons advantage:** 150 icons ≤ 10kb vs Font Awesome (~76kb) or Heroicons SVG bundle (~45kb)
+- ✅ Faster loading, especially for small icon sets
+- ✅ No external dependencies or build steps
+- ⚠️ Limited to Unicode emoji selection vs thousands of designed icons
+
+## 💡 Future Enhancements
+
+### Planned Improvements
+- **Starter pack**: Pre-built CSS with ~50 most common UI icons (arrows, check, close, warning, info)
+- **Accessibility helpers**: Auto-generate `role="img"` and `aria-label` attributes
+- **Optional consistency**: Twemoji/Noto Emoji font integration for visual uniformity
+- **Favorites system**: Quick-access for frequently used icons
+- **CDN hosting**: Instant testing without downloads
+
+### Comparison with Alternatives
+Unlike heavyweight icon libraries, Ycons prioritizes:
+- **Portability** - Works everywhere Unicode is supported
+- **Offline-first** - No network dependencies
+- **Simplicity** - Pure CSS, no build tools or frameworks
+- **Familiarity** - Users already know these symbols
 
 ## 📜 License
 

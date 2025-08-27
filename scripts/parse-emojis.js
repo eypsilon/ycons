@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const input = fs.readFileSync("emoji-test.txt", "utf8");
+const input = fs.readFileSync("emoji-test.extended.txt", "utf8");
 const lines = input.split("\n");
 
 const symbols = [];
@@ -71,5 +71,5 @@ const output = {
   symbols,
 };
 
-fs.writeFileSync("emojis.json", JSON.stringify(output, null, 2), "utf8");
+fs.writeFileSync("emojis.extended.json", JSON.stringify(output, null, 2), "utf8");
 console.log("✅ Parsed", meta.total, "emojis across", meta.groups, "groups");
