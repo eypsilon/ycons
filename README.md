@@ -20,7 +20,7 @@ You may recognize some of these icons. These are the same icons used by LLMs and
 
 - **Transform utilities** - flip, mirror, rotate in any direction
 - **Filter effects** - grayscale, brightness, blur, sepia
-- **Animations** - spin, pulse, bounce with smooth CSS keyframes
+- **Animations** - spin, pulse, bounce with customizable timing and accessibility support
 - **Size variants** - 7 different sizes from tiny to huge (xxs → xxl)
 
 All while maintaining the **ultra-lightweight** approach that beats every icon library.
@@ -64,6 +64,20 @@ Renamed to (you can rename all, or none, it's your call):
 }
 .ycon::before { display: inline-block; }
 
+/* Animation timer */
+:root {
+    --ycon-animation-spin: 2s;
+    --ycon-animation-pulse: 2s;
+    --ycon-animation-bounce: 1s;
+}
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --ycon-animation-spin: 0s;
+        --ycon-animation-pulse: 0s;
+        --ycon-animation-bounce: 0s;
+    }
+}
+
 /* Transform utilities */
 .ycon.mirror { transform: scaleX(-1); }
 .ycon.flip { transform: scaleY(-1); }
@@ -83,9 +97,9 @@ Renamed to (you can rename all, or none, it's your call):
 .ycon.desaturate { filter: saturate(0.5); }
 
 /* Animation utilities */
-.ycon.spin { animation: ycon-spin 2s linear infinite; }
-.ycon.pulse { animation: ycon-pulse 2s ease-in-out infinite; }
-.ycon.bounce { animation: ycon-bounce 1s ease-in-out infinite; }
+.ycon.spin { animation: ycon-spin var(--ycon-animation-spin) linear infinite; }
+.ycon.pulse { animation: ycon-pulse var(--ycon-animation-pulse) ease-in-out infinite; }
+.ycon.bounce { animation: ycon-bounce var(--ycon-animation-bounce) ease-in-out infinite; }
 
 /* Keyframes */
 @keyframes ycon-spin {from {transform: rotate(0deg);} to {transform: rotate(360deg);}}
@@ -229,7 +243,7 @@ Spinning emojis make perfect themed loading indicators with personality:
 - **Size variants** - 7 predefined sizes (xxs to xxl)
 - **Transform utilities** - Mirror, flip, rotate transformations
 - **Filter effects** - Grayscale, blur, brightness, sepia, invert, saturation
-- **Animations** - Spin, pulse, bounce with CSS keyframes
+- **Animations** - Spin, pulse, bounce with customizable timing and accessibility support
 
 ### 📱 **Live Preview**
 - Real-time preview of selected icons
@@ -239,7 +253,7 @@ Spinning emojis make perfect themed loading indicators with personality:
 
 ### 💾 **Export & Import**
 - **Download CSS** - Get production-ready stylesheet (89-101kb for all icons)
-- **Download HTML** - Complete demo page with selected icons (~2.8MB for all icons)  
+- **Download HTML** - Complete demo page with selected icons (~2.8MB for all icons)
 - **Minify option** - Compact CSS for smaller file sizes (~12% reduction)
 - **Export JSON** - Save selected icons with metadata (~293kb for all icons)
 - **Import JSON** - Restore previous selections using backup
@@ -283,6 +297,25 @@ Spinning emojis make perfect themed loading indicators with personality:
 <span class="ycon ycon-gear spin"></span>              <!-- Spinning -->
 <span class="ycon ycon-beating-heart pulse"></span>    <!-- Pulsing -->
 <span class="ycon ycon-basketball bounce"></span>      <!-- Bouncing -->
+```
+
+### Custom Animation Timing
+Customize animation speeds with CSS custom properties:
+```css
+:root {
+    --ycon-animation-spin: 5s;     /* Slower spinning */
+    --ycon-animation-pulse: 1s;    /* Faster pulsing */
+    --ycon-animation-bounce: 3s;   /* Slower bouncing */
+}
+
+/* Disable animations for users with motion sensitivity */
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --ycon-animation-spin: 0s;
+        --ycon-animation-pulse: 0s;
+        --ycon-animation-bounce: 0s;
+    }
+}
 ```
 
 ### Combining Classes

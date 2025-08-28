@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ycons - Advanced Usage</title>
+    <meta name="description" content="Ycons - Advanced Usage Examples for CSS Icons">
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAYNJREFUOI2lkz9S20AYxX+7ttOgGDOjQKMZmMEt8lapdQQdISlInRJTcQ5ofAPgBOgG2citMrEnNBpnAgFBgdBuCs8a2TEMjF+1/97b7739VhwWllUgV2I/J1Cu0THWaDc31uhyjc6rBEqLahQmmQzTnlubDNPe46/furSoFwVKiypG2RzZ4ebycrsYZQmS6DmBuBhlycNtsQ6wuafO3YYbP9wW67nWF0A8J2Aln/JUnzqyH6q+EE+HhCD2Q9UH+LAXfi8luoIDAHF4b49zrfcB3r33/nZ2u1+FYfB/XVOLAA3MYDJMe1tKnTRNZT4CtINg3Nzw48cKWmIZHVoNOlc/sjNXKYCsPBn5oeo3fT9qwtGfof7myqujgoNc6wtH3lLqBMMXUevEOE/1aT24WQ6SmU2ATaU+O5tioZXjq5/ZYHZLqARAnmrrMtrY7cYYkrlXqOHM2+lG7SAYL1poB8HY2+lGdfKyCoBpKzcKk0ghFUxbufJk1LrjevHsUoG3YOXf+A/28K0/S+gHCgAAAABJRU5ErkJggg==" />
     <style>
         :root {
-            --bg: #f7f8fa;
-            --ink: #2c2e30;
+            --bg: #d7d2cd99;
+            --ink: #222426;
             --shadow: 0 2px 4px 1px rgba(0, 0, 0, .2);
-            --ring: 0 0 0 3px rgba(37, 99, 235, .25);
         }
 
         * {
@@ -33,6 +33,8 @@
 
         hr {
             margin: 10px 0;
+            border-color: #e8dacd55;
+            border-width: 1px 0 0 0;
         }
 
         header {
@@ -59,16 +61,25 @@
                 padding: 2rem;
                 background: #fff;
                 box-shadow: var(--shadow);
+
+                &.complex-content {
+                    padding: 2rem 2rem .5rem;
+                }
+                h4 {
+                    color: #757373;
+                    text-shadow: 1px 2px #ff000088, -1px -2px #28772099;
+                }
             }
 
             /* Prefix li elements with icons (or better Unicode character) */
             ul {
                 margin: 20px 0;
-                padding: 5px 10px;
+                padding: 8px;
                 background: #eee;
+                font-size: 1.05rem;
 
                 li {
-                    margin: 5px 0;
+                    margin: 0 0 1px;
                     padding: 5px 8px;
                     list-style: none;
                     background: #fff;
@@ -78,23 +89,27 @@
                         min-width: 20px;
                         pointer-events: none;
                     }
+                    &:last-child {
+                        margin: 0;
+                    }
                 }
-            }
-
-            /* Just to have that one clear, that's all it needs in general */
-            ul li:before {
-                content: "\2714"; /* ✔ */
             }
 
             /* Change as needed */
             ul.warnings {
                 font-weight: 600;
-                color: #e43e3e;
-                background: #e43e3edd;
+                color: #b90202;
+                background: #dd7272c9;
+            }
 
-                li:before {
-                    content: "\26A0"; /* ⚠ */
-                }
+            /* Just to have that one clear, that's all it needs in general */
+            ul li:before {
+                content: "\2714";    /* ✔ */
+                color: #2aca2a;
+            }
+            ul.warnings li:before {
+                content: "\26A0";   /* ⚠ */
+                color: #ac0e0e;
             }
 
             /* Card Grid Layout */
@@ -265,14 +280,40 @@
             }
         }
 
+        .page-purpose {
+            padding-right: 130px;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: "\1F6F0";
+                transform: scaleX(-1) rotate(20deg);
+                position: absolute;
+                top: -64px;
+                right: -44px;
+                font-size: 190px;
+                opacity: 0.05;
+                z-index: 0;
+                transition: all .15s .5s ease-in-out;
+            }
+            &:hover::before {
+                transform: scaleX(-1) rotate(40deg);
+                top: -4px;
+                right: -4px;
+                font-size: 100px;
+                opacity: 0.09;
+            }
+        }
+
         .file-tree {
             font-family: 'Courier New', monospace;
             background: #f5f5f5;
-            margin-top: 20px;
-            padding: 20px;
+            margin: 20px 0;
+            padding: 1rem;
             border-radius: 4px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.5);
             white-space: pre;
+            overflow: auto;
             line-height: 1.1;
             font-size: 16px;
             font-weight: bold;
@@ -280,9 +321,50 @@
             .ycon { font-size: 18px }
         }
 
+        blockquote {
+            margin: .5rem 1.5rem .5rem 0;
+            padding: .5rem 1rem;
+            border-left: 3px solid #3b75d8;
+            color: #121519;
+
+            small {
+                margin-top: .5rem;
+                display: block;
+                font-size: 14px;
+                color: #515961ee;
+            }
+        }
+
+        [data-label-quote] {
+            position: relative;
+
+            &:after {
+                content: attr(data-label-quote);
+                position: absolute;
+                top: -25px;
+                right: 5px;
+                color: #c5c5c5;
+            }
+        }
+
+        .ycon {
+            --ycon-animation-spin: 12s;
+            --ycon-animation-pulse: 12s;
+            --ycon-animation-bounce: 11s;
+        }
+
+        /* Console → Ctrl+Shift+P → reduced → "Emulate-CSS-prefers..." */
+        @media (prefers-reduced-motion: reduce) {
+            .ycon {
+                --ycon-animation-spin: 0s;
+                --ycon-animation-pulse: 0s;
+                --ycon-animation-bounce: 0s;
+            }
+        }
+
         /**
-        * Used Ycons in this tool
-        */
+         * Used Ycons in this tool
+         */
         .ycon {
             display: inline-block;
             vertical-align: middle;
@@ -312,10 +394,9 @@
         .ycon.desaturate { filter: saturate(0.5); }
 
         /* Animation utilities */
-        .ycon.spin { animation: ycon-spin 2s linear infinite; }
-        .ycon.pulse { animation: ycon-pulse 2s ease-in-out infinite; }
-        .ycon.bounce { animation: ycon-bounce 1s ease-in-out infinite; }
-        .ycon.pulse-high { animation-fill-mode: forwards; animation: ycon-pulse .7s ease-in-out 4; }
+        .ycon.spin { animation: ycon-spin var(--ycon-animation-spin) linear infinite; }
+        .ycon.pulse { animation: ycon-pulse var(--ycon-animation-pulse) ease-in-out infinite; }
+        .ycon.bounce { animation: ycon-bounce var(--ycon-animation-bounce) ease-in-out infinite; }
 
         /* Keyframes */
         @keyframes ycon-spin {from {transform: rotate(0deg);} to {transform: rotate(360deg);}}
@@ -351,7 +432,13 @@
         .ycon-red-triangle-pointed-down::before { content: "\1F53B"; }
         .ycon-end-arrow::before { content: "\1F51A"; }
         .ycon-end-arrow::before { content: "\1F51A"; }
-        /* Box drawing characters */
+        .ycon-flying-saucer::before { content: "\1F6F8"; }
+        .ycon-right-anger-bubble::before { content: "\1F5EF"; }
+        .ycon-spiral-notepad::before { content: "\1F5D2"; }
+        .ycon-file-cabinet::before { content: "\1F5C4"; }
+        .ycon-mobile-phone::before { content: "\1F4F1"; }
+        .ycon-bellhop-bell-raw::before { content: "\1F6CE\FE0F"; }
+        /* Box drawing character ycons */
         .ycon-box-drawings-light-vertical-and-right::before { content: "\251C"; }
         .ycon-box-drawings-light-horizontal::before { content: "\2500"; }
         .ycon-box-drawings-light-up-and-right::before { content: "\2514"; }
@@ -362,10 +449,44 @@
         .ycon-box-drawings-light-down-and-horizontal::before { content: "\252C"; }
         .ycon-box-drawings-light-up-and-horizontal::before { content: "\2534"; }
         .ycon-box-drawings-light-vertical-and-horizontal::before { content: "\253C"; }
+
+        /*
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                    🧪 EXPERIMENTAL FEATURES                     │
+        │                                                                 │
+        │  CSS attr() with units - Dynamic icon sizing & animation        │
+        │  ✅ Chrome, Brave, Opera (Chromium-based browsers)              │
+        │  🔧 Firefox + others (JS polyfill active)                       │
+        │                                                                 │
+        │  Usage:                                                         │
+        │  <span data-size-px="42" class="ycon ycon-rocket"></span>       │
+        │  <span data-size-rem="3.5" class="ycon ycon-palette"></span>    │
+        │  <span data-ani-duration="5000" class="ycon ycon-spin"></span>  │
+        └─────────────────────────────────────────────────────────────────┘
+        */
+        .ycon[data-size-rem] { font-size: attr(data-size-rem rem); }
+        .ycon[data-size-px] { font-size: attr(data-size-px px); }
+        .ycon[data-ani-duration] { animation-duration: attr(data-ani-duration ms); }
+
+        /*
+        Future possibilities with CSS attr():
+        - animation-iteration-count: attr(data-count);
+        - animation-play-state: attr(data-state);
+        - animation-timing-function: attr(data-timing);
+        - animation-delay: attr(data-delay ms);
+        - animation-direction: attr(data-direction);
+        - transform: attr(data-transform);
+        - opacity: attr(data-opacity);
+        */
+        /*
+        <span
+            data-size-px="26"
+            data-ani-duration="750"
+            class="ycon ycon-flying-saucer pulse"></span>
+        */
     </style>
 </head>
 <body>
-
     <header>
         <div class="wrap">
             <h1>Ycons <span class="ycon ycon-artist-palette ycon-xl"></span></h1>
@@ -380,7 +501,7 @@
             <p>Check the Network activity for this page. It loads the HTML file and that's it. The rest is Unicode and Magic!</p>
         </section>
 
-        <section class="ul-example">
+        <section class="ul-example complex-content">
             <h2>Unordered lists with custom icons</h2>
             <ul>
                 <li>Some data to list</li>
@@ -394,13 +515,18 @@
             </ul>
         </section>
 
-        <section class="file-structure">
-            <h2>Ycons Project Structure</h2>
+        <section class="file-structure complex-content">
+            <h2 style="display: flex; justify-content: space-between">
+                <span>Ycons Project Structure</span>
+                <span title="🧪 Experimental: data-size-px='26' data-ani-duration='1250'">
+                    <span
+                        data-size-px="26"
+                        data-ani-duration="1250"
+                        class="ycon ycon-flying-saucer pulse"></span>
+                </span>
+            </h2>
 <div class="file-tree">ycons/
-<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> CLAUDE.md
 <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> README.md
-<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> RELEASE_NOTES.md
-<span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> ToDo.md
 <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> example/
 <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> advanced.usage.html
 <span class="ycon ycon-box-drawings-light-vertical" role="img" aria-label="box drawings light vertical"></span>   <span class="ycon ycon-box-drawings-light-vertical-and-right" role="img" aria-label="box drawings light vertical and right"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span><span class="ycon ycon-box-drawings-light-horizontal" role="img" aria-label="box drawings light horizontal"></span> assets/
@@ -424,6 +550,23 @@
         </section>
 
         <section class="grid-card">
+            <div class="enter-the-yatrix" data-label-quote="Enter The Yatrix">
+                <blockquote>
+                    "Do not try and bend the icon. That's impossible. Instead… only try to realize the truth."
+                    <small>— Element Boy</small>
+                </blockquote>
+                <blockquote>
+                    "What truth?"
+                    <small>— Vueh's Witnesses</small>
+                </blockquote>
+                <blockquote>
+                    "There is no icon. Then you'll see that it is not the icon that changes, it is only your element."
+                    <small>— Element Boy</small>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="grid-card complex-content">
             <h2>Icon Cards Grid Layout</h2>
             <div class="card-grid">
                 <div class="card">
@@ -449,7 +592,35 @@
             </div>
         </section>
 
-        <section class="bg-layer">
+        <section class="grid-card">
+            <div class="yeo-needs-to-level-up" data-label-quote="Yatrix Reloaded">
+                <blockquote>
+                    "We're going to need... more advanced techniques."
+                    <small>— Yorpheus</small>
+                </blockquote>
+                <blockquote>
+                    "Like what?"
+                    <small>— Yeo</small>
+                </blockquote>
+                <blockquote>
+                    "Icon routing. Unicode systems. Advanced state management."
+                    <small>— Yorpheus</small>
+                </blockquote>
+                <blockquote>
+                    "downloads framework knowledge directly to brain" <i>(Yeo)</i>
+                </blockquote>
+                <blockquote>
+                    "I know Kung Vue..."
+                    <small>— Yeo</small>
+                </blockquote>
+                <blockquote>
+                    "Show me."
+                    <small>— Yorpheus</small>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="bg-layer complex-content">
             <h2>Background Icon Styling</h2>
             <div class="hero-box rocket-bg">
                 <div class="hero-content">
@@ -466,12 +637,16 @@
                 </div>
             </div>
         </section>
+
+        <section class="grid-card" style="text-align: center;">
+            <h4>Ycons, because Yconsny?</h4>
+        </section>
     </main>
 
     <footer style="text-align:center">
         <nav>
             <a title="Ycons ~ Emoji Icon Generator" href="https://github.com/eypsilon/ycons">Ycons</a>
-            <a title="Ycons WebApp" href="https://eypsilon.github.io/ycons/example/">WebAPP</a>
+            <a title="Ycons WebApp" href="https://eypsilon.github.io/ycons/example/">Icon Generator</a>
             <a title="YpsilonEventHandler, Event Delegation, Reinvented" href="https://github.com/eypsilon/YpsilonEventHandler">YpsilonEventHandler</a>
         </nav>
         <hr />
@@ -481,9 +656,90 @@
     <script>
         if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
             document.body.insertAdjacentHTML('afterbegin', `<div style="padding:50px 10px;text-align:center;background:#b50c0c;color:#fff;font-size:16px;">
-            <b>SAFARI, REALLY?</b><br>If you refuse to use a browser to surf the internet like any reasonable person, well, too bad for you.
-            <br>Internet Explorer was not only a <b>trauma</b>, but a lesson!<br><small>Browser: Opera, Firefox, Brave, Chrome</small></div>`);
+            <b>SAFARI, REALLY?</b><br>Sorry, we don't have time to deface our tool for a so-called browser that can't manage to adhere to standards since forever.
+            <br>It's mind-blowing that the world's largest corporations are responsible for the worst browsers in the universe...<br>
+            <small>Use Browser: Opera, Firefox, Brave, Chrome</small></div>`);
         }
+
+        // Experimental: CSS attr() Polyfill
+        // Supports: Chrome, Brave, Opera (Chromium-based browsers)
+        // Polyfill for Firefox and other browsers
+        function initAttrPolyfill() {
+            // Check if CSS attr() with units is supported
+            // Firefox drops invalid CSS but doesn't report errors in getComputedStyle
+            let supported = false;
+
+            try {
+                const testEl = document.createElement('div');
+                testEl.setAttribute('data-test', '99');
+                testEl.style.cssText = 'font-size: attr(data-test px); position: absolute; visibility: hidden;';
+                document.body.appendChild(testEl);
+
+                const computedSize = getComputedStyle(testEl).fontSize;
+                // If attr() works, font-size should be 99px
+                // If not supported, it falls back to browser default (usually 16px or similar)
+                supported = computedSize === '99px';
+
+                document.body.removeChild(testEl);
+            } catch (e) {
+                supported = false;
+            }
+
+            if (!supported) {
+                console.log('🔧 CSS attr() polyfill active (Firefox detected)');
+
+                // Polyfill for data-size-px
+                document.querySelectorAll('.ycon[data-size-px]').forEach(el => {
+                    const size = el.getAttribute('data-size-px');
+                    if (size) el.style.fontSize = size + 'px';
+                });
+
+                // Polyfill for data-size-rem
+                document.querySelectorAll('.ycon[data-size-rem]').forEach(el => {
+                    const size = el.getAttribute('data-size-rem');
+                    if (size) el.style.fontSize = size + 'rem';
+                });
+
+                // Polyfill for data-ani-duration
+                document.querySelectorAll('.ycon[data-ani-duration]').forEach(el => {
+                    const duration = el.getAttribute('data-ani-duration');
+                    if (duration) el.style.animationDuration = duration + 'ms';
+                });
+
+                // Observer for dynamic elements
+                const observer = new MutationObserver(mutations => {
+                    mutations.forEach(mutation => {
+                        mutation.addedNodes.forEach(node => {
+                            if (node.nodeType === 1) { // Element node
+                                // Check the node itself
+                                if (node.matches && node.matches('.ycon[data-size-px], .ycon[data-size-rem], .ycon[data-ani-duration]')) {
+                                    applyAttrPolyfill(node);
+                                }
+                                // Check descendants
+                                node.querySelectorAll && node.querySelectorAll('.ycon[data-size-px], .ycon[data-size-rem], .ycon[data-ani-duration]').forEach(applyAttrPolyfill);
+                            }
+                        });
+                    });
+                });
+
+                observer.observe(document.body, { childList: true, subtree: true });
+            } else {
+                console.log('✅ Native CSS attr() support detected');
+            }
+
+            function applyAttrPolyfill(el) {
+                const sizePx = el.getAttribute('data-size-px');
+                const sizeRem = el.getAttribute('data-size-rem');
+                const aniDuration = el.getAttribute('data-ani-duration');
+
+                if (sizePx) el.style.fontSize = sizePx + 'px';
+                if (sizeRem) el.style.fontSize = sizeRem + 'rem';
+                if (aniDuration) el.style.animationDuration = aniDuration + 'ms';
+            }
+        }
+
+        // Initialize polyfill
+        initAttrPolyfill();
     </script>
 </body>
 </html>
