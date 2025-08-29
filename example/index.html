@@ -13,8 +13,8 @@
             --ink: #414549;
             --muted: #adb1b8;
             --accent: #2563eb;
-            --shadow: 0 2px 4px 1px rgba(0, 0, 0, .2);
-            --ring: 0 0 0 3px rgba(37, 99, 235, .25);
+            --shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
+            --ring: 0 0 0 3px rgba(37, 99, 235, 0.25);
         }
 
         * {
@@ -28,59 +28,58 @@
         }
 
         body {
-            font: .85rem/1.5 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            font: 0.85rem/1.5 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
             margin: 0;
             color: var(--ink);
             background: var(--bg);
             overflow-y: scroll;
         }
 
-        body:not(.parsed-output-open) {
-            #css-output-wrapper {
-                display: none;
-            }
+        body:not(.parsed-output-open) #css-output-wrapper {
+            display: none;
         }
 
         body.parsed-output-open {
             overflow: hidden;
+        }
 
-            header,
-            footer,
-            .output-configs,
-            #emoji-grid,
-            #css-preview,
-            #emojis-json {
-                user-select: none;
-            }
-            #parsed-output {
-                position: fixed;
-                top: 0px;
-                left: 0;
-                z-index: 5;
-                width: 100vw;
-                height: 100vh;
-                max-height: 100vh;
+        body.parsed-output-open header,
+        body.parsed-output-open footer,
+        body.parsed-output-open .output-configs,
+        body.parsed-output-open #emoji-grid,
+        body.parsed-output-open #css-preview,
+        body.parsed-output-open #emojis-json {
+            user-select: none;
+        }
 
-                #css-output-wrapper {
-                    margin: 0;
-                    padding: 0;
-                    width: 100%;
-                    height: 100vh;
-                    max-height: 100%;
-                    position: relative;
-                    background: green;
-                }
+        body.parsed-output-open #parsed-output {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            z-index: 5;
+            width: 100vw;
+            height: 100vh;
+            max-height: 100vh;
+        }
 
-                #css-output {
-                    margin: 0;
-                    padding: 20px;
-                    width: 100%;
-                    height: 100%;
-                    max-height: 100%;
-                    overflow: auto;
-                    overflow-y: scroll;
-                }
-            }
+        body.parsed-output-open #parsed-output #css-output-wrapper {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            max-height: 100%;
+            position: relative;
+            background: green;
+        }
+
+        body.parsed-output-open #parsed-output #css-output {
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            overflow: auto;
+            overflow-y: scroll;
         }
 
         button {
@@ -95,16 +94,17 @@
             border: 1px solid #e5e7eb;
             background: #fff;
             box-shadow: var(--shadow);
-            font-size: .9rem;
+            font-size: 0.9rem;
+        }
 
-            &:focus {
-                outline: none;
-                box-shadow: var(--shadow), var(--ring);
-            }
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            box-shadow: var(--shadow), var(--ring);
         }
 
         .muted {
-            color: var(--muted)
+            color: var(--muted);
         }
 
         .hidden {
@@ -112,69 +112,67 @@
         }
 
         #search-input {
-            transition: transform .25s;
+            transition: transform 0.25s;
+        }
 
-            &:focus {
-                transform: matrix(1.1, 0, 0, 1.1, 0, 0);
-            }
+        #search-input:focus {
+            transform: matrix(1.1, 0, 0, 1.1, 0, 0);
         }
 
         header {
             position: sticky;
             top: -64px;
             z-index: 5;
-            background: linear-gradient(37deg, #fff, rgb(255 241 241 / 90%));
+            background: linear-gradient(37deg, #fff, rgba(255, 241, 241, 0.9));
             box-shadow: var(--shadow);
+        }
 
-            .wrap {
-                max-width: 1100px;
-                margin: 0 auto;
-                padding: 10px 14px 16px;
-            }
+        header .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 10px 14px 16px;
+        }
 
-            h1 {
-                font-size: 2.2rem;
-                margin: 0 0 4px 0
-            }
+        header h1 {
+            font-size: 2.2rem;
+            margin: 0 0 4px 0;
+        }
 
-            label {
-                span {
-                    display: block;
-                    font-size: 15px;
-                }
-            }
+        header label span {
+            display: block;
+            font-size: 15px;
+        }
 
-            .bar {
-                display: flex;
-                gap: 10px;
-                align-items: center;
-                flex-wrap: wrap;
-            }
+        header .bar {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-            #controls {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-wrap: wrap;
+        header #controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
 
-                #count {
-                    margin-bottom: .5rem;
-                    min-width: 180px;
-                    font-size: 1rem;
-                }
-            }
+        header #controls #count {
+            margin-bottom: 0.5rem;
+            min-width: 180px;
+            font-size: 1rem;
+        }
 
-            #show-selected-container {
-                display: none;
+        header #show-selected-container {
+            display: none;
+        }
 
-                &.show {
-                    display: block;
-                }
-            }
+        header #show-selected-container.show {
+            display: block;
+        }
 
-            .header-detail-section {
-                white-space: nowrap;
-            }
+        header .header-detail-section {
+            white-space: nowrap;
         }
 
         #emoji-grid {
@@ -182,55 +180,58 @@
             padding: 15px 15px 94px;
             max-width: 1440px;
             min-height: 65vh;
+        }
 
-            .group {
-                margin-bottom: 20px;
-            }
+        #emoji-grid .group {
+            margin-bottom: 20px;
+        }
 
-            .subgroup {
-                margin-bottom: 1.5rem;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: start;
-                gap: 12px;
-                overflow: visible;
-            }
+        #emoji-grid .subgroup {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 12px;
+            overflow: visible;
+        }
 
-            h2, h3 {
-                display: flex;
-                justify-content: space-between;
+        #emoji-grid h2,
+        #emoji-grid h3 {
+            display: flex;
+            justify-content: space-between;
+        }
 
-                button {
-                    background: transparent;
-                }
-            }
+        #emoji-grid h2 button,
+        #emoji-grid h3 button {
+            background: transparent;
+        }
 
-            h2 {
-                margin: 40px 0 10px;
-                padding: 8px 14px;
-                color: #f7f7f7;
-                background: linear-gradient(96deg, #2d2020, #4f4545);
+        #emoji-grid h2 {
+            margin: 40px 0 10px;
+            padding: 8px 14px;
+            color: #f7f7f7;
+            background: linear-gradient(96deg, #2d2020, #4f4545);
+        }
 
-                button {
-                    color: #fff;
-                    background: transparent;
-                }
-            }
-            h3 {
-                margin: 10px 0 5px;
-                flex: 1 100%;
-                position: relative;
+        #emoji-grid h2 button {
+            color: #fff;
+            background: transparent;
+        }
 
-                button {
-                    padding: 8px 14px;
-                    position: absolute;
-                    top: -5px;
-                    right: 0;
-                    color: #382d2d;
-                    border-color: #eae5e533;
-                    font-size: 14px;
-                }
-            }
+        #emoji-grid h3 {
+            margin: 10px 0 5px;
+            flex: 1 100%;
+            position: relative;
+        }
+
+        #emoji-grid h3 button {
+            padding: 8px 14px;
+            position: absolute;
+            top: -5px;
+            right: 0;
+            color: #382d2d;
+            border-color: #eae5e533;
+            font-size: 14px;
         }
 
         /* Grid */
@@ -247,36 +248,36 @@
             max-width: 100px;
             min-width: 80px;
             cursor: pointer;
+        }
 
-            .symbol-symbol {
-                font-size: 2.8rem;
-                line-height: 1;
-            }
+        .emoji-item .symbol-symbol {
+            font-size: 2.8rem;
+            line-height: 1;
+        }
 
-            .symbol-name,
-            .symbol-id {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: 100%;
-            }
+        .emoji-item .symbol-name,
+        .emoji-item .symbol-id {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
 
-            .symbol-name {
-                font-size: .8rem;
-                color: #5e6268;
-            }
+        .emoji-item .symbol-name {
+            font-size: 0.8rem;
+            color: #5e6268;
+        }
 
-            .symbol-id {
-                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-                font-size: .75rem;
-                color: #5e6268;
-            }
+        .emoji-item .symbol-id {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.75rem;
+            color: #5e6268;
+        }
 
-            &.selected {
-                background-color: #e0f7fa;
-                outline: 2px solid var(--accent);
-                outline-offset: 1px;
-            }
+        .emoji-item.selected {
+            background-color: #e0f7fa;
+            outline: 2px solid var(--accent);
+            outline-offset: 1px;
         }
 
         #css-preview {
@@ -286,110 +287,114 @@
             border-radius: 8px;
             padding: 15px;
             scroll-margin-top: 60px;
+        }
 
-            &:target {
-                margin-top: 600px;
-            }
+        #css-preview:target {
+            margin-top: 600px;
+        }
 
-            h3 {
-                margin: 25px 0 10px 0;
-                font-size: 1.6rem;
-                color: #495057;
-            }
+        #css-preview h3 {
+            margin: 25px 0 10px 0;
+            font-size: 1.6rem;
+            color: #495057;
+        }
 
-            #preview-icons {
-                min-height: 40px;
+        #css-preview #preview-icons {
+            min-height: 40px;
+        }
 
-                .preview-effects {
-                    display: none; /* Hidden by default */
-                }
-                &.show-effects .preview-effects {
-                    display: inline-block;
-                }
-                span {
-                    pointer-events: all;
-                }
-                > div {
-                    margin: 6px 0 0;
-                    padding: 12px 0;
-                    flex-wrap: wrap;
+        #css-preview #preview-icons .preview-effects {
+            display: none;
+            /* Hidden by default */
+        }
 
-                    &:not(:last-of-type) {
-                        border-bottom: 1px solid #97afc7;
-                    }
-                }
-            }
+        #css-preview #preview-icons.show-effects .preview-effects {
+            display: inline-block;
+        }
+
+        #css-preview #preview-icons span {
+            pointer-events: all;
+        }
+
+        #css-preview #preview-icons>div {
+            margin: 6px 0 0;
+            padding: 12px 0;
+            flex-wrap: wrap;
+        }
+
+        #css-preview #preview-icons>div:not(:last-of-type) {
+            border-bottom: 1px solid #97afc7;
         }
 
         #parsed-output {
             position: sticky;
             bottom: 0;
+        }
 
-            .output-configs {
-                padding: 8px 4px 4px;
-                position: absolute;
-                bottom: 0;
-                right: 20px;
-                color: #f5f5f5;
-                background: #3b3535;
+        #parsed-output .output-configs {
+            padding: 8px 4px 4px;
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            color: #f5f5f5;
+            background: #3b3535;
+        }
 
-                select {
-                    max-width: 90px;
-                }
+        #parsed-output .output-configs select {
+            max-width: 90px;
+        }
 
-                button {
-                    padding: 0px 10px;
-                    min-height: 32px;
-                    display: inline-flex;
-                    align-items: center;
-                }
+        #parsed-output .output-configs button {
+            padding: 0px 10px;
+            min-height: 32px;
+            display: inline-flex;
+            align-items: center;
+        }
 
-                label span {
-                    padding: 0 5px;
-                }
+        #parsed-output .output-configs label span {
+            padding: 0 5px;
+        }
 
-                input {
-                    max-width: 80px;
-                    padding: 5px;
-                }
+        #parsed-output .output-configs input {
+            max-width: 80px;
+            padding: 5px;
+        }
 
-                .editor-controller {
-                    margin-left: .5rem;
-                    display: flex;
+        #parsed-output .output-configs .editor-controller {
+            margin-left: 0.5rem;
+            display: flex;
+        }
 
-                    button {
-                        margin-right: 6px;
-                    }
+        #parsed-output .output-configs .editor-controller button {
+            margin-right: 6px;
+        }
 
-                    select {
-                        margin-right: 6px;
-                        padding: 6px 10px;
-                    }
-                }
+        #parsed-output .output-configs .editor-controller select {
+            margin-right: 6px;
+            padding: 6px 10px;
+        }
 
-                .output-variables {
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    padding-top: 6px;
-                    display: flex;
-                    justify-content: space-between;
-                    border-top: 1px solid #888;
-                }
-            }
+        #parsed-output .output-configs .output-variables {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-top: 6px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #888;
+        }
 
-            pre#css-output {
-                margin: 0 20px;
-                padding: 10px;
-                background: #fff;
-                border: 1px solid;
-                white-space: pre-wrap;
-                height: 40px;
-                overflow: auto;
-                position: sticky;
-                bottom: 0;
-                resize: vertical;
-                line-height: 1.1;
-            }
+        #parsed-output pre#css-output {
+            margin: 0 20px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid;
+            white-space: pre-wrap;
+            height: 40px;
+            overflow: auto;
+            position: sticky;
+            bottom: 0;
+            resize: vertical;
+            line-height: 1.1;
         }
 
         /**
@@ -399,24 +404,20 @@
             display: none;
         }
 
-        body.group-selected {
-            .sub-group-container {
-                display: initial;
-            }
+        body.group-selected .sub-group-container {
+            display: initial;
         }
 
         .set-dynamic-sizes-container {
             display: none;
         }
 
-        body.parsed-output-open {
-            .set-dynamic-sizes-container {
-                display: block;
+        body.parsed-output-open .set-dynamic-sizes-container {
+            display: block;
+        }
 
-                textarea {
-                    width: 100%;
-                }
-            }
+        body.parsed-output-open .set-dynamic-sizes-container textarea {
+            width: 100%;
         }
 
         footer {
@@ -425,114 +426,162 @@
             background: #dfd7d74b;
             border-top: 1px solid #fadede;
             line-height: 1.7;
+        }
 
-            hr {
-                margin: .5rem 0;
-                border-color: #fdf2f2;
-                border-width: 1px 0 0;
-            }
+        footer hr {
+            margin: 0.5rem 0;
+            border-color: #fdf2f2;
+            border-width: 1px 0 0;
+        }
 
-            b {
-                font-size: 14px;
-            }
+        footer b {
+            font-size: 14px;
+        }
 
-            nav {
-                display: flex;
-                justify-content: center;
+        footer nav {
+            display: flex;
+            justify-content: center;
+        }
 
-                a {
-                    padding: 0 12px;
-                    display: inline-block;
+        footer nav a {
+            padding: 0 12px;
+            display: inline-block;
+        }
 
-                    &:not(:last-of-type) {
-                        border-right: 1px solid #7e7373;
-                    }
-                }
-            }
+        footer nav a:not(:last-of-type) {
+            border-right: 1px solid #7e7373;
         }
 
         /**
-         * Layout utilities
-         */
+        * Layout utilities
+        */
+        body.body-width-xs #emoji-grid {
+            max-width: 610px;
+        }
 
-        body.body-width-xs #emoji-grid { max-width: 610px; }
-        body.body-width-s #emoji-grid { max-width: 740px; }
-        body.body-width-m #emoji-grid { max-width: 980px; }
-        body.body-width-l #emoji-grid { max-width: 1220px; }
-        body.body-width-max #emoji-grid { max-width: 2040px; }
+        body.body-width-s #emoji-grid {
+            max-width: 740px;
+        }
+
+        body.body-width-m #emoji-grid {
+            max-width: 980px;
+        }
+
+        body.body-width-l #emoji-grid {
+            max-width: 1220px;
+        }
+
+        body.body-width-max #emoji-grid {
+            max-width: 2040px;
+        }
 
         /**
-         * View switch
-         */
-        body.compact-view {
-            &.body-width-xs #emoji-grid { max-width: 670px; }
-            &.body-width-s #emoji-grid { max-width: 850px; }
-            &.body-width-m #emoji-grid { max-width: 1040px; }
-            &.body-width-l #emoji-grid { max-width: 1220px; }
-
-            #emoji-grid {
-                .subgroup h3 {
-                    display: none;
-                }
-                .group {
-                    margin-bottom: .2rem;
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 8px;
-
-                    .subgroup {
-                        margin-bottom: .3rem;
-                    }
-                    h2 {
-                        margin: 10px 0 10px;
-                        width: 100%;
-                    }
-                    .emoji-item {
-                        padding: 10px 4px;
-
-                        .symbol-name,
-                        .symbol-id {
-                            display: none;
-                        }
-                    }
-                }
-            }
+        * View switch
+        */
+        body.compact-view.body-width-xs #emoji-grid {
+            max-width: 670px;
         }
-        body.group-title-only {
-            #emoji-grid {
-                h2 {
-                    margin: 10px 0;
-                }
-                .group {
-                    margin-bottom: 10px;
-                }
-                .subgroup {
-                    display: none;
-                }
-            }
+
+        body.compact-view.body-width-s #emoji-grid {
+            max-width: 850px;
+        }
+
+        body.compact-view.body-width-m #emoji-grid {
+            max-width: 1040px;
+        }
+
+        body.compact-view.body-width-l #emoji-grid {
+            max-width: 1220px;
+        }
+
+        body.compact-view #emoji-grid .subgroup h3 {
+            display: none;
+        }
+
+        body.compact-view #emoji-grid .group {
+            margin-bottom: 0.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        body.compact-view #emoji-grid .group .subgroup {
+            margin-bottom: 0.3rem;
+        }
+
+        body.compact-view #emoji-grid .group h2 {
+            margin: 10px 0 10px;
+            width: 100%;
+        }
+
+        body.compact-view #emoji-grid .group .emoji-item {
+            padding: 10px 4px;
+        }
+
+        body.compact-view #emoji-grid .group .emoji-item .symbol-name,
+        body.compact-view #emoji-grid .group .emoji-item .symbol-id {
+            display: none;
+        }
+
+        body.group-title-only #emoji-grid h2 {
+            margin: 10px 0;
+        }
+
+        body.group-title-only #emoji-grid .group {
+            margin-bottom: 10px;
+        }
+
+        body.group-title-only #emoji-grid .subgroup {
+            display: none;
         }
 
         /* Icon sizes in grid */
-        body.icons-s {
-            .symbol-symbol { font-size: 2.0rem }
+        body.icons-s .symbol-symbol {
+            font-size: 2rem;
         }
-        body.icons-m {
-            .symbol-symbol { font-size: 3.8rem }
+
+        body.icons-m .symbol-symbol {
+            font-size: 3.8rem;
         }
-        body.icons-l {
-            .symbol-symbol { font-size: 4.8rem }
+
+        body.icons-l .symbol-symbol {
+            font-size: 4.8rem;
         }
-        body.icons-xl {
-            .emoji-item { max-width: 120px; }
-            .symbol-symbol { font-size: 5.8rem }
+
+        body.icons-xl .emoji-item {
+            max-width: 120px;
         }
-        body.icons-xxl {
-            #emoji-grid .group {
-                .emoji-item {
-                    padding: 14px 4px;
-                    max-width: 160px;
-                }
-                .symbol-symbol { font-size: 7.8rem }
+
+        body.icons-xl .symbol-symbol {
+            font-size: 5.8rem;
+        }
+
+        body.icons-xxl #emoji-grid .group .emoji-item {
+            padding: 14px 4px;
+            max-width: 160px;
+        }
+
+        body.icons-xxl #emoji-grid .group .symbol-symbol {
+            font-size: 7.8rem;
+        }
+
+        @media only all and (max-width: 600px) {
+            h1 {
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            header .wrap {
+                padding-top: 5px;
+                padding-bottom: 0;
+            }
+            #controls .bar label span,
+            #parsed-output {
+                display: none;
+                height: 0;
+                overflow: hidden;
+                position: fixed;
+                left: 999%;
+                z-index: -1;
             }
         }
 
@@ -607,11 +656,9 @@
         .ycon-end-arrow::before { content: "\1F51A"; }
 
         /* Misc */
-        #show-effects:not(:checked) {
-            + span + span {
-                animation: ycon-pulse 1.5s ease-in-out infinite;
-                transform: matrix(1.15, 0, .2, 1.15, 0, 0);
-            }
+        #show-effects:not(:checked) + span + span {
+            animation: ycon-pulse 1.5s ease-in-out infinite;
+            transform: matrix(1.15, 0, .2, 1.15, 0, 0);
         }
     </style>
 </head>
